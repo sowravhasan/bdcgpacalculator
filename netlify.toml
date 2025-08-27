@@ -46,7 +46,7 @@
   package = "netlify-plugin-prerender-spa"
   
   [plugins.inputs]
-    routes = ["/"]
+    source = "."
 
 # Headers for all environments
 [[headers]]

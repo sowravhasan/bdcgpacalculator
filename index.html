@@ -318,35 +318,64 @@
                 "applicationCategory": "EducationApplication",
                 "operatingSystem": "Web",
                 "offers": { "@type": "Offer", "price": "0" }
+            }
+        ]
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How is CGPA calculated in Bangladesh universities?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CGPA = Σ(Credit × Grade Point) ÷ Σ(Credit). Bangladesh follows the UGC (University Grants Commission) grading system where A+ = 4.00, A = 3.75, A- = 3.50, and so on. This calculator supports both public universities (DU, BUET, Jahangirnagar) and private universities (NSU, IUB, BRAC)."
+                }
             },
             {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "How is CGPA calculated in Bangladesh?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "CGPA = Σ(Credit × GradePoint) ÷ Σ(Credit). Use the UGC grading mapping for marks-to-grade conversions."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Can I import my semester marks?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes — paste CSV or upload a CSV with Subject, Credit, and Mark/Grade/GPA columns; the tool parses and adds them."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Which universities are supported?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Preset grading scales and notes are included for major BD universities: DU, BUET, NSU, BRAC, IUB, RUET, AUST, etc. You can always add a custom grading mapping."
-                        }
-                    }
-                ]
+                "@type": "Question",
+                "name": "Which Bangladesh universities are supported by this calculator?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "All major Bangladesh universities are supported including: Public Universities - University of Dhaka (DU), BUET, Jahangirnagar University, University of Chittagong, RUET, CUET; Private Universities - North South University (NSU), BRAC University, Independent University Bangladesh (IUB), American International University (AIUB), East West University, and 40+ more institutions."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I calculate CGPA for multiple semesters at once?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! This calculator offers two modes: Semester Calculator for individual semester GPA calculation, and Overall Calculator for combining multiple semester results to get your cumulative CGPA. You can import data via CSV or add semesters manually."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is this CGPA calculator free and safe to use?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, completely free with no registration required. Your data is stored only in your browser's local storage - no server uploads, no privacy concerns. Works offline and you can export your calculations as CSV files for backup."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I plan my target CGPA for future semesters?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Use the Target Planner feature to calculate what grades you need in remaining courses to achieve your desired CGPA. Perfect for scholarship requirements or academic goals planning."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How accurate is this calculator compared to university systems?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Highly accurate - uses official UGC grading scales and university-specific calculations. Trusted by 10,000+ students across Bangladesh. However, always verify final calculations with your university's academic office for official transcripts."
+                }
             }
         ]
     }
@@ -1325,7 +1354,8 @@
                         </div>
                     </div>
 
-                    <div class="pb-4" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="border-b border-gray-200 dark:border-gray-600 pb-4" itemscope itemprop="mainEntity"
+                        itemtype="https://schema.org/Question">
                         <h3 class="font-semibold mb-2 text-lg" itemprop="name">How accurate is this calculator compared
                             to university systems?</h3>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
@@ -1362,8 +1392,7 @@
 
     <!-- Hidden template for subject rows -->
     <template id="subject-row-template">
-        <div
-            class="subject-row border border-gray-200 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 p-4">
+        <div class="subject-row border border-gray-200 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 p-4">
             <!-- Mobile Layout -->
             <div class="block md:hidden">
                 <div class="flex items-start justify-between mb-3">
@@ -1396,7 +1425,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Desktop Layout -->
             <div class="hidden md:flex items-center justify-between">
                 <div class="flex-1 grid grid-cols-4 gap-4">

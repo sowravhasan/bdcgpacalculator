@@ -1,0 +1,38 @@
+# Security.txt - Security Contact Information for SEO Trust Signals
+# This file helps establish trust with search engines and users
+# Learn more at: https://securitytxt.org/
+
+Contact: mailto:sowravhasan101@gmail.com
+Contact: https://sowravhasan.vercel.app/contact
+Expires: 2026-08-27T00:00:00.000Z
+Encryption: https://bdcgpacalculator.netlify.app/pgp-key.txt
+Acknowledgments: https://bdcgpacalculator.netlify.app/security-acknowledgments
+Preferred-Languages: en, bn
+Canonical: https://bdcgpacalculator.netlify.app/.well-known/security.txt
+Policy: https://bdcgpacalculator.netlify.app/security-policy
+
+# Bug Bounty Information
+Hiring: https://sowravhasan.vercel.app/contact
+
+# Security Policy Details
+# We take security seriously and appreciate responsible disclosure
+# Please allow up to 48 hours for initial response
+# Severity levels: Critical, High, Medium, Low
+# 
+# In scope:
+# - Cross-site scripting (XSS)
+# - Cross-site request forgery (CSRF)
+# - Server-side injection
+# - Authentication bypass
+# - Privilege escalation
+# 
+# Out of scope:
+# - Self-XSS
+# - Social engineering
+# - Physical attacks
+# - DoS/DDoS attacks
+# - Rate limiting issues
+#
+# Reward range: Recognition + Educational resources
+# Response time: 24-48 hours for acknowledgment
+# Fix time: 30-90 days depending on severity

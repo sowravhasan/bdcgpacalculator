@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Main homepage - Primary landing page for CGPA calculator -->
+    <url>
+        <loc>https://bdcgpacalculator.netlify.app/</loc>
+        <lastmod>2025-08-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bdcgpacalculator.netlify.app/" />
+        <xhtml:link rel="alternate" hreflang="bn" href="https://bdcgpacalculator.netlify.app/" />
+    </url>
+
+    <!-- SEO Support Files for Enhanced Search Visibility -->
+    <url>
+        <loc>https://bdcgpacalculator.netlify.app/assets/preview.jpg</loc>
+        <lastmod>2025-08-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://bdcgpacalculator.netlify.app/humans.txt</loc>
+        <lastmod>2025-08-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://bdcgpacalculator.netlify.app/feed.json</loc>
+        <lastmod>2025-08-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://bdcgpacalculator.netlify.app/rss.xml</loc>
+        <lastmod>2025-08-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Security and Trust Files -->
+    <url>
+        <loc>https://bdcgpacalculator.netlify.app/.well-known/security.txt</loc>
+        <lastmod>2025-08-27</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+</urlset>

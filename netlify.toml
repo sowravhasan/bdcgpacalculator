@@ -1,0 +1,122 @@
+# Netlify Build Configuration for SEO Optimization
+# This file configures build settings, plugins, and deployment for better SEO
+
+[build]
+  # Build command (if using build process)
+  command = "echo 'Static site - no build required'"
+  
+  # Publish directory
+  publish = "."
+  
+  # Build environment variables for SEO
+  [build.environment]
+    NODE_ENV = "production"
+    HUGO_VERSION = "0.118.2"
+
+# SEO and Performance Plugins
+[[plugins]]
+  # Sitemap generator plugin
+  package = "@netlify/plugin-sitemap"
+  
+  [plugins.inputs]
+    buildDir = "."
+    exclude = [
+      "/_headers",
+      "/_redirects", 
+      "/netlify.toml",
+      "/README.md",
+      "/SEO-Guide.md"
+    ]
+    trailingSlash = false
+    prettyURLs = true
+
+[[plugins]]
+  # Essential for SEO - automatically optimizes images
+  package = "netlify-plugin-image-optim"
+
+[[plugins]]
+  # Minify HTML, CSS, JS for better performance and SEO
+  package = "netlify-plugin-minify-html"
+  
+  [plugins.inputs]
+    contexts = ["production"]
+
+[[plugins]]
+  # Prerender pages for better SEO
+  package = "netlify-plugin-prerender-spa"
+  
+  [plugins.inputs]
+    publicPath = "/"
+    routes = ["/"]
+
+# Headers for all environments
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Production-specific headers for SEO
+[context.production.headers]
+  for = "/*"
+  [context.production.headers.values]
+    X-Robots-Tag = "index, follow"
+    Cache-Control = "public, max-age=3600"
+
+# Development headers
+[context.deploy-preview.headers]
+  for = "/*"
+  [context.deploy-preview.headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[context.branch-deploy.headers]
+  for = "/*"
+  [context.branch-deploy.headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+# Edge handlers for SEO (future enhancement)
+[[edge_handlers]]
+  path = "/api/*"
+  function = "edge-seo"
+
+# Forms (if you add contact/feedback forms)
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
+
+# Redirect rules for SEO
+[[redirects]]
+  from = "/cgpa-calculator"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gpa-calculator"
+  to = "/"
+  status = 301
+  force = true
+
+# Environment-specific settings
+[context.production]
+  [context.production.environment]
+    HUGO_ENV = "production"
+    
+[context.deploy-preview]
+  [context.deploy-preview.environment]
+    HUGO_ENV = "staging"

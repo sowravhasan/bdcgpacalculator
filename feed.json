@@ -1,0 +1,66 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Bangladesh CGPA Calculator Updates",
+    "home_page_url": "https://bdcgpacalculator.netlify.app/",
+    "feed_url": "https://bdcgpacalculator.netlify.app/feed.json",
+    "description": "Updates and news about Bangladesh CGPA Calculator - supporting students from all public and private universities",
+    "user_comment": "This feed provides updates about new university additions, feature releases, and important announcements for students using our CGPA calculator.",
+    "icon": "https://bdcgpacalculator.netlify.app/assets/icon-512x512.png",
+    "favicon": "https://bdcgpacalculator.netlify.app/favicon.ico",
+    "language": "en-US",
+    "author": {
+        "name": "Sowrav Hasan",
+        "url": "https://sowravhasan.vercel.app/",
+        "avatar": "https://sowravhasan.vercel.app/assets/avatar.png"
+    },
+    "items": [
+        {
+            "id": "1",
+            "url": "https://bdcgpacalculator.netlify.app/#v1.4-seo-optimization",
+            "title": "Major SEO Optimization Update - v1.4 Released",
+            "content_text": "We've completely optimized our CGPA calculator for better search engine visibility. New features include enhanced metadata, structured data markup, improved performance, and better mobile experience for students across Bangladesh.",
+            "content_html": "<p>We've completely optimized our CGPA calculator for better search engine visibility. New features include:</p><ul><li>Enhanced metadata for better search rankings</li><li>Structured data markup for rich snippets</li><li>Improved performance and Core Web Vitals</li><li>Better mobile experience for students</li><li>FAQ section with comprehensive university information</li></ul>",
+            "summary": "Major SEO and performance improvements to help Bangladesh students find our CGPA calculator more easily.",
+            "date_published": "2025-08-27T00:00:00Z",
+            "date_modified": "2025-08-27T00:00:00Z",
+            "tags": [
+                "SEO",
+                "Performance",
+                "Update",
+                "Bangladesh Universities"
+            ]
+        },
+        {
+            "id": "2",
+            "url": "https://bdcgpacalculator.netlify.app/#university-support",
+            "title": "50+ Bangladesh Universities Now Supported",
+            "content_text": "Our calculator now supports grading systems from over 50 public and private universities across Bangladesh including DU, BUET, NSU, IUB, BRAC University, RUET, and many more. Perfect for students transferring between institutions or comparing grades.",
+            "content_html": "<p>Our calculator now supports grading systems from over 50 public and private universities across Bangladesh including:</p><ul><li>Public Universities: DU, BUET, RUET, CUET, KUET, SUST</li><li>Private Universities: NSU, IUB, BRAC, AIUB, EWU, UAP</li><li>Medical Colleges and Engineering Universities</li><li>Specialized grading scales and credit systems</li></ul>",
+            "summary": "Comprehensive support for Bangladesh university grading systems.",
+            "date_published": "2025-08-15T00:00:00Z",
+            "date_modified": "2025-08-27T00:00:00Z",
+            "tags": [
+                "Universities",
+                "Support",
+                "Bangladesh",
+                "Grading Systems"
+            ]
+        },
+        {
+            "id": "3",
+            "url": "https://bdcgpacalculator.netlify.app/#mobile-optimization",
+            "title": "Mobile-First Design for Bangladesh Students",
+            "content_text": "Recognizing that most Bangladesh students access the internet via mobile devices, we've optimized our CGPA calculator for mobile-first experience with faster loading, touch-friendly interface, and offline capabilities.",
+            "content_html": "<p>Recognizing that most Bangladesh students access the internet via mobile devices, we've optimized our CGPA calculator with:</p><ul><li>Mobile-first responsive design</li><li>Touch-friendly interface</li><li>Faster loading on 3G/4G networks</li><li>Offline capabilities via Progressive Web App</li><li>Reduced data usage for students</li></ul>",
+            "summary": "Mobile optimization specifically designed for Bangladesh internet infrastructure.",
+            "date_published": "2025-08-01T00:00:00Z",
+            "date_modified": "2025-08-27T00:00:00Z",
+            "tags": [
+                "Mobile",
+                "Performance",
+                "PWA",
+                "Bangladesh"
+            ]
+        }
+    ]
+}

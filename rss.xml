@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+
+    <channel>
+        <title>Bangladesh CGPA Calculator - Updates &amp; News</title>
+        <link>https://bdcgpacalculator.netlify.app/</link>
+        <description>Latest updates, new university additions, and feature releases for Bangladesh CGPA Calculator - helping students from all public and private universities calculate their grades accurately.</description>
+        <language>en-us</language>
+        <copyright>© 2025 Bangladesh CGPA Calculator Team</copyright>
+        <managingEditor>sowravhasan101@gmail.com (Sowrav Hasan)</managingEditor>
+        <webMaster>sowravhasan101@gmail.com (Sowrav Hasan)</webMaster>
+        <pubDate>Tue, 27 Aug 2025 00:00:00 GMT</pubDate>
+        <lastBuildDate>Tue, 27 Aug 2025 00:00:00 GMT</lastBuildDate>
+        <category>Education</category>
+        <category>Bangladesh Universities</category>
+        <category>CGPA Calculator</category>
+        <generator>Bangladesh CGPA Calculator RSS Generator</generator>
+        <docs>https://www.rssboard.org/rss-specification</docs>
+        <ttl>1440</ttl>
+        <image>
+            <url>https://bdcgpacalculator.netlify.app/assets/rss-logo.png</url>
+            <title>Bangladesh CGPA Calculator</title>
+            <link>https://bdcgpacalculator.netlify.app/</link>
+            <width>144</width>
+            <height>144</height>
+            <description>Bangladesh CGPA Calculator Logo</description>
+        </image>
+        <atom:link href="https://bdcgpacalculator.netlify.app/rss.xml" rel="self" type="application/rss+xml" />
+
+        <item>
+            <title>Major SEO Optimization Update - v1.4 Released</title>
+            <link>https://bdcgpacalculator.netlify.app/#v1.4-seo-optimization</link>
+            <description>We've completely optimized our CGPA calculator for better search engine visibility and user experience for Bangladesh students.</description>
+            <content:encoded><![CDATA[
+        <p>We've released a major update (v1.4) with comprehensive SEO optimization to help Bangladesh students find our CGPA calculator more easily through search engines.</p>
+        
+        <h3>What's New in v1.4:</h3>
+        <ul>
+          <li><strong>Enhanced Search Visibility:</strong> Optimized meta tags, structured data, and keywords for Bangladesh university searches</li>
+          <li><strong>Faster Performance:</strong> Improved Core Web Vitals for better user experience on mobile devices</li>
+          <li><strong>Rich Snippets:</strong> Added JSON-LD markup for enhanced Google search results</li>
+          <li><strong>FAQ Section:</strong> Comprehensive Q&A covering all major Bangladesh universities</li>
+          <li><strong>Social Media:</strong> Optimized sharing for Facebook, LinkedIn, and Twitter</li>
+        </ul>
+        
+        <h3>Universities Supported:</h3>
+        <p>Our calculator works with grading systems from 50+ Bangladesh universities including:</p>
+        <ul>
+          <li>Public Universities: DU, BUET, RUET, CUET, KUET, SUST, JUST, RU, JU, CU</li>
+          <li>Private Universities: NSU, IUB, BRAC, AIUB, EWU, UAP, AUST, DIU</li>
+          <li>Medical Colleges and Specialized Institutions</li>
+        </ul>
+        
+        <p>The calculator remains completely free, requires no registration, and works offline on mobile devices.</p>
+      ]]>            </content:encoded>
+            <pubDate>Tue, 27 Aug 2025 00:00:00 GMT</pubDate>
+            <guid isPermaLink="false">bangladesh-cgpa-v1.4-seo-2025-08-27</guid>
+            <category>SEO</category>
+            <category>Update</category>
+            <category>Performance</category>
+            <dc:creator>Sowrav Hasan</dc:creator>
+        </item>
+
+        <item>
+            <title>50+ Bangladesh Universities Now Supported</title>
+            <link>https://bdcgpacalculator.netlify.app/#university-support</link>
+            <description>Comprehensive support for grading systems from public and private universities across Bangladesh.</description>
+            <content:encoded><![CDATA[
+        <p>We're proud to announce that our CGPA calculator now supports grading systems from over 50 universities across Bangladesh, making it the most comprehensive tool for students nationwide.</p>
+        
+        <h3>Public Universities Supported:</h3>
+        <ul>
+          <li>University of Dhaka (DU)</li>
+          <li>Bangladesh University of Engineering and Technology (BUET)</li>
+          <li>Rajshahi University of Engineering &amp; Technology (RUET)</li>
+          <li>Chittagong University of Engineering &amp; Technology (CUET)</li>
+          <li>Khulna University of Engineering &amp; Technology (KUET)</li>
+          <li>Shahjalal University of Science and Technology (SUST)</li>
+          <li>Jahangirnagar University (JU)</li>
+          <li>Rajshahi University (RU)</li>
+          <li>University of Chittagong (CU)</li>
+        </ul>
+        
+        <h3>Private Universities Supported:</h3>
+        <ul>
+          <li>North South University (NSU)</li>
+          <li>Independent University, Bangladesh (IUB)</li>
+          <li>BRAC University</li>
+          <li>American International University-Bangladesh (AIUB)</li>
+          <li>East West University (EWU)</li>
+          <li>University of Asia Pacific (UAP)</li>
+          <li>Ahsanullah University of Science and Technology (AUST)</li>
+          <li>Daffodil International University (DIU)</li>
+        </ul>
+        
+        <p>Each university's specific grading scale, credit system, and calculation method is accurately implemented to ensure precise CGPA calculations.</p>
+      ]]>            </content:encoded>
+            <pubDate>Tue, 15 Aug 2025 00:00:00 GMT</pubDate>
+            <guid isPermaLink="false">bangladesh-cgpa-universities-2025-08-15</guid>
+            <category>Universities</category>
+            <category>Bangladesh</category>
+            <category>Support</category>
+            <dc:creator>Sowrav Hasan</dc:creator>
+        </item>
+
+        <item>
+            <title>Mobile-First Design for Bangladesh Students</title>
+            <link>https://bdcgpacalculator.netlify.app/#mobile-optimization</link>
+            <description>Optimized mobile experience designed specifically for Bangladesh internet infrastructure and student needs.</description>
+            <content:encoded><![CDATA[
+        <p>Understanding that most Bangladesh students primarily access the internet through mobile devices, we've completely redesigned our CGPA calculator with a mobile-first approach.</p>
+        
+        <h3>Mobile Optimizations:</h3>
+        <ul>
+          <li><strong>Fast Loading:</strong> Optimized for 3G/4G networks common in Bangladesh</li>
+          <li><strong>Touch-Friendly:</strong> Large buttons and easy navigation for small screens</li>
+          <li><strong>Offline Support:</strong> Works without internet connection via Progressive Web App technology</li>
+          <li><strong>Data Efficient:</strong> Minimal data usage to reduce costs for students</li>
+          <li><strong>Responsive Design:</strong> Perfect display on all screen sizes</li>
+        </ul>
+        
+        <h3>Student-Focused Features:</h3>
+        <ul>
+          <li>Quick grade entry with smart defaults</li>
+          <li>Instant CGPA calculation as you type</li>
+          <li>Save calculations locally (no account needed)</li>
+          <li>Dark mode for late-night studying</li>
+          <li>Bengali language support (coming soon)</li>
+        </ul>
+        
+        <p>The mobile optimization ensures that students across Bangladesh can easily calculate their CGPA whether they're in Dhaka, Chittagong, Sylhet, or rural areas with limited internet connectivity.</p>
+      ]]>            </content:encoded>
+            <pubDate>Tue, 01 Aug 2025 00:00:00 GMT</pubDate>
+            <guid isPermaLink="false">bangladesh-cgpa-mobile-2025-08-01</guid>
+            <category>Mobile</category>
+            <category>PWA</category>
+            <category>Performance</category>
+            <dc:creator>Sowrav Hasan</dc:creator>
+        </item>
+
+    </channel>
+</rss>

@@ -1,0 +1,96 @@
+# humans.txt - SEO and Transparency File
+# This file provides information about the website creators for search engines and users
+# Learn more at: http://humanstxt.org/
+
+/* TEAM */
+Developer: Sowrav Hasan
+Portfolio: https://sowravhasan.vercel.app/
+Site: https://bdcgpacalculator.netlify.app/
+Location: Dhaka, Bangladesh
+Contact: sowravhasan101@gmail.com
+
+/* THANKS */
+TailwindCSS: For the amazing utility-first CSS framework
+Netlify: For reliable hosting and deployment
+Bangladesh Universities: For grading system information
+Students: For feedback and feature requests
+
+/* SITE */
+Last Update: 2025/08/27
+Language: English / Bengali
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: TailwindCSS, Vanilla JavaScript
+Software: VS Code, Git, GitHub
+SEO: Optimized for Bangladesh university searches
+Performance: Core Web Vitals optimized
+Accessibility: WCAG 2.1 AA compliant
+
+/* KEYWORDS */
+Primary: Bangladesh CGPA calculator
+Secondary: University GPA calculator Bangladesh
+Target Universities: DU, BUET, NSU, IUB, BRAC, RUET
+Geographic: Bangladesh, Dhaka, Chittagong
+Academic: CGPA, GPA, grading system, transcript
+
+/* TECHNICAL DETAILS */
+Framework: Single Page Application (SPA)
+Hosting: Netlify Edge Network
+CDN: Global content delivery
+SSL: TLS 1.3 encryption
+Cache: Optimized for performance
+Mobile: Responsive design
+PWA: Progressive Web App ready
+Schema: JSON-LD structured data
+Social: Open Graph + Twitter Cards
+
+/* FEATURES */
+- 4.0 and 5.0 scale CGPA calculation
+- Support for 50+ Bangladesh universities
+- Grade point to letter grade conversion
+- Semester-wise GPA tracking
+- Cumulative CGPA calculation
+- Mobile-optimized interface
+- Offline functionality (PWA)
+- No registration required
+- Free to use
+
+/* VERSION HISTORY */
+v1.0: Initial CGPA calculator
+v1.1: Added multiple university support
+v1.2: Mobile optimization
+v1.3: PWA implementation
+v1.4: SEO optimization (current)
+
+/* CONTACT */
+For universities wanting to be added:
+Email: sowravhasan101@gmail.com
+
+For technical issues:
+Email: sowravhasan101@gmail.com
+
+For general inquiries:
+Email: sowravhasan101@gmail.com
+
+/* PRIVACY */
+No personal data collection
+No registration required
+No cookies for tracking
+Privacy-first approach
+GDPR compliant (for international users)
+
+/* LEGAL */
+Copyright: © 2025 Bangladesh CGPA Calculator
+License: Educational use permitted
+Disclaimer: For reference only, verify with official transcripts
+Terms: Available at /terms-of-use
+Privacy: Available at /privacy-policy
+
+                              _.-"""""""-._
+                           .-'             '-.
+                          /                   \
+                         |   CGPA Calculator   |
+                         |     Bangladesh      |
+                          \                   /
+                           '-._           _.-'
+                               """""""""""""
+                         Made with ❤️ in Bangladesh

@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Allow: /js/
+Allow: /assets/
+
+# Important pages
+Allow: /index.html
+Allow: /manifest.json
+
+# Sitemap
+Sitemap: https://bdcgpacalculator.netlify.app/sitemap.xml
+
+# Block unnecessary crawling of assets
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /README.md
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1

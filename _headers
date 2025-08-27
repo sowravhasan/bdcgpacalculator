@@ -1,0 +1,67 @@
+# Netlify Headers Configuration for SEO and Performance
+# This file configures HTTP headers for better SEO, security, and performance
+
+/*
+  # Security Headers for Better SEO Trust Signals
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  
+  # Cache Control for Static Assets
+  Cache-Control: public, max-age=31536000, immutable
+  
+  # Content Security Policy for Security and SEO Trust
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com
+
+# HTML Files - Specific caching and SEO headers
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+  X-Robots-Tag: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+
+# JavaScript Files - Optimized caching
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: application/javascript; charset=utf-8
+
+# CSS Files - Optimized caching
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: text/css; charset=utf-8
+
+# Images - Long-term caching for SEO performance
+/assets/*.png
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/png
+
+/assets/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/jpeg
+
+/assets/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/webp
+
+# Favicon and Touch Icons
+/favicon.ico
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/x-icon
+
+/apple-touch-icon.png
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/png
+
+# SEO Files - Frequent crawling allowed
+/robots.txt
+  Cache-Control: public, max-age=3600
+  Content-Type: text/plain; charset=utf-8
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/xml; charset=utf-8
+
+# Manifest - PWA optimization
+/manifest.json
+  Cache-Control: public, max-age=86400
+  Content-Type: application/manifest+json; charset=utf-8

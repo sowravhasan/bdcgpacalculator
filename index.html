@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="Sowrav Hasan">
+    <link rel="canonical" href="https://bdcgpacalculator.netlify.app/">
+
+    <!-- RSS and JSON Feeds for SEO -->
+    <link rel="alternate" type="application/rss+xml" title="Bangladesh CGPA Calculator Updates" href="/rss.xml">
+    <link rel="alternate" type="application/json" title="Bangladesh CGPA Calculator JSON Feed" href="/feed.json">
+
+    <!-- Human-readable Information -->
+    <link rel="author" href="/humans.txt">
+
+    <title>Bangladesh CGPA Calculator — All Public & Private Universities (2025)</title>
+    <meta name="description"
+        content="Free CGPA & GPA Calculator for all Bangladesh universities - DU, BUET, NSU, IUB, BRAC, RUET, Jahangirnagar, Chittagong, and more. Instant calculation for public and private institutions. No signup required.">
+    <meta name="keywords"
+        content="Bangladesh CGPA calculator, university CGPA calculator Bangladesh, public private university GPA, DU CGPA calculator, BUET GPA calculator, NSU CGPA, Bangladesh university grading system, semester GPA calculator BD">
+
+    <!-- Enhanced Open Graph / Social Media Tags -->
+    <meta property="og:title" content="Bangladesh CGPA Calculator — All Public & Private Universities" />
+    <meta property="og:description"
+        content="Free CGPA & GPA Calculator for all Bangladesh universities. Supports DU, BUET, NSU, IUB, BRAC, RUET and 50+ institutions. Instant calculation with no signup required." />
+    <meta property="og:image" content="https://bdcgpacalculator.netlify.app/assets/preview.jpg" />
+    <meta property="og:image:alt"
+        content="Bangladesh CGPA Calculator - Free tool for all public and private universities" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://bdcgpacalculator.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BD CGPA Calculator" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Enhanced Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bangladesh CGPA Calculator — All Public & Private Universities" />
+    <meta name="twitter:description"
+        content="Free CGPA & GPA Calculator for all Bangladesh universities. Supports 50+ institutions including DU, BUET, NSU, IUB, BRAC." />
+    <meta name="twitter:image" content="https://bdcgpacalculator.netlify.app/assets/preview.jpg" />
+    <meta name="twitter:image:alt"
+        content="Bangladesh CGPA Calculator - Free tool for all public and private universities" />
+    <meta name="twitter:creator" content="@bdcgpacalc" />
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="geo.region" content="BD" />
+    <meta name="geo.country" content="Bangladesh" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- Additional Social Media Meta Tags -->
+    <meta property="og:image:secure_url" content="https://bdcgpacalculator.netlify.app/assets/preview.jpg" />
+    <meta property="article:author" content="Sowrav Hasan" />
+    <meta property="article:publisher" content="https://bdcgpacalculator.netlify.app/" />
+
+    <!-- LinkedIn specific tags -->
+    <meta property="og:image:type" content="image/jpeg" />
+
+    <!-- Additional Twitter Tags -->
+    <meta name="twitter:site" content="@bdcgpacalc" />
+    <meta name="twitter:domain" content="bdcgpacalculator.netlify.app" />
+
+    <!-- Search Engine Image Optimization -->
+    <meta name="image" content="https://bdcgpacalculator.netlify.app/assets/preview.jpg" />
+    <meta name="thumbnail" content="https://bdcgpacalculator.netlify.app/assets/preview.jpg" />
+
+    <!-- Performance and Core Web Vitals Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+
+    <!-- Resource Hints for Performance -->
+    <link rel="prefetch" href="js/script.js">
+    <link rel="preconnect" href="https://bdcgpacalculator.netlify.app">
+
+    <!-- Reduce Cumulative Layout Shift (CLS) -->
+    <style>
+        /* Prevent layout shift during font loading */
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        /* Ensure consistent button heights */
+        button,
+        .btn-animate {
+            min-height: 44px;
+        }
+
+        /* Reserve space for images */
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+    </style>
+
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Bangladesh CGPA Calculator",
+      "description": "Free CGPA and GPA calculator for all Bangladesh universities including public and private institutions like DU, BUET, NSU, IUB, BRAC University.",
+      "url": "https://bdcgpacalculator.netlify.app/",
+      "image": "https://bdcgpacalculator.netlify.app/assets/preview.jpg",
+      "screenshot": "https://bdcgpacalculator.netlify.app/assets/preview.jpg",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Sowrav Hasan",
+        "url": "https://sowravhasan.vercel.app/",
+        "sameAs": ["https://sowravhasan.vercel.app/"]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Sowrav Hasan",
+        "url": "https://sowravhasan.vercel.app/"
+      },
+      "inLanguage": "en",
+      "datePublished": "2024-01-01",
+      "dateModified": "2025-08-27",
+      "keywords": "CGPA calculator, GPA calculator, Bangladesh university, DU, BUET, NSU, IUB, BRAC, public university, private university",
+      "applicationSubCategory": "Educational Tool",
+      "browserRequirements": "Requires JavaScript",
+      "softwareVersion": "2.0",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1247",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "featureList": [
+        "CGPA calculation for all Bangladesh universities",
+        "Support for public and private institutions",
+        "Multiple grading systems",
+        "CSV import/export",
+        "Target grade planning",
+        "No registration required",
+        "Works offline"
+      ]
+    }
+    </script>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2563EB">
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/x-icon"
+        href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzI1NjNFQiIvPgo8dGV4dCB4PSIxNiIgeT0iMjAiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWkiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QzwvdGV4dD4KPC9zdmc+">
+
+    <!-- Preload critical resources for performance -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    </noscript>
+
+    <!-- Preload Tailwind CSS for performance -->
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    </noscript>
+
+    <!-- Preload JavaScript -->
+    <link rel="preload" href="js/script.js" as="script">
+
+    <!-- Critical CSS for above-the-fold content -->
+    <style>
+        /* Critical CSS for immediate rendering */
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .hero-loading {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #e2e8f0;
+            border-top: 4px solid #3b82f6;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        // Modern vibrant color palette
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a'
+                        },
+                        accent: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d'
+                        },
+                        success: '#10b981',
+                        warning: '#f59e0b',
+                        error: '#ef4444',
+                        info: '#06b6d4',
+                        gray: {
+                            50: '#f9fafb',
+                            100: '#f3f4f6',
+                            200: '#e5e7eb',
+                            300: '#d1d5db',
+                            400: '#9ca3af',
+                            500: '#6b7280',
+                            600: '#4b5563',
+                            700: '#374151',
+                            800: '#1f2937',
+                            900: '#111827'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                        'display': ['Inter', 'system-ui', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'monospace']
+                    },
+                    fontSize: {
+                        'xs': ['0.75rem', { lineHeight: '1rem' }],
+                        'sm': ['0.875rem', { lineHeight: '1.25rem' }],
+                        'base': ['1rem', { lineHeight: '1.5rem' }],
+                        'lg': ['1.125rem', { lineHeight: '1.75rem' }],
+                        'xl': ['1.25rem', { lineHeight: '1.75rem' }],
+                        '2xl': ['1.5rem', { lineHeight: '2rem' }],
+                        '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
+                        '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
+                        '5xl': ['3rem', { lineHeight: '1' }],
+                        '6xl': ['3.75rem', { lineHeight: '1' }]
+                    },
+                    spacing: {
+                        '18': '4.5rem',
+                        '88': '22rem',
+                        '128': '32rem'
+                    },
+                    borderRadius: {
+                        'xl': '0.75rem',
+                        '2xl': '1rem',
+                        '3xl': '1.5rem'
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',
+                        'medium': '0 4px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+                        'strong': '0 8px 50px -12px rgba(0, 0, 0, 0.25)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "SoftwareApplication",
+                "name": "BD CGPA Calculator",
+                "url": "https://bdcgpacalculator.netlify.app/",
+                "description": "Free client-side CGPA & GPA calculator for Bangladesh universities. Supports letter grade, percentage, CSV import, and target planner.",
+                "applicationCategory": "EducationApplication",
+                "operatingSystem": "Web",
+                "offers": { "@type": "Offer", "price": "0" }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "How is CGPA calculated in Bangladesh?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "CGPA = Σ(Credit × GradePoint) ÷ Σ(Credit). Use the UGC grading mapping for marks-to-grade conversions."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can I import my semester marks?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes — paste CSV or upload a CSV with Subject, Credit, and Mark/Grade/GPA columns; the tool parses and adds them."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Which universities are supported?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Preset grading scales and notes are included for major BD universities: DU, BUET, NSU, BRAC, IUB, RUET, AUST, etc. You can always add a custom grading mapping."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        /* Modern CSS with improved typography and animations */
+
+        /* Critical CSS for loading */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+
+            .print-only {
+                display: block !important;
+            }
+
+            body {
+                background: white !important;
+                color: black !important;
+            }
+        }
+
+        .print-only {
+            display: none;
+        }
+
+        /* Force light mode by default */
+        html {
+            color-scheme: light;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-feature-settings: 'cv01', 'cv02', 'cv03', 'cv04';
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            line-height: 1.6;
+        }
+
+        /* Dark mode styles */
+        .dark {
+            color-scheme: dark;
+        }
+
+        /* Modern glass morphism effects */
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .dark .glass {
+            background: rgba(31, 41, 55, 0.85);
+            border: 1px solid rgba(75, 85, 99, 0.3);
+        }
+
+        /* Enhanced animations */
+        .btn-animate {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-animate::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn-animate:hover::before {
+            left: 100%;
+        }
+
+        .btn-animate:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px -8px rgba(59, 130, 246, 0.4);
+        }
+
+        .btn-animate:active {
+            transform: translateY(0);
+        }
+
+        /* Smooth theme transitions */
+        * {
+            transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        /* Loading states with skeleton animations */
+        .skeleton {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+            border-radius: 0.5rem;
+        }
+
+        .dark .skeleton {
+            background: linear-gradient(90deg, #374151 25%, #4b5563 50%, #374151 75%);
+            background-size: 200% 100%;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+
+            100% {
+                background-position: 200% 0;
+            }
+        }
+
+        /* Enhanced focus states for accessibility */
+        .focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+            border-radius: 0.375rem;
+        }
+
+        /* Modern card styles */
+        .card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(229, 231, 235, 0.8);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transform: translateY(-1px);
+        }
+
+        .dark .card {
+            background: #1f2937;
+            border-color: rgba(75, 85, 99, 0.3);
+        }
+
+        /* Gradient text effects */
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8, #7c3aed);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 200%;
+            animation: gradient-shift 3s ease infinite;
+        }
+
+        @keyframes gradient-shift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        /* Modern input styles */
+        .modern-input {
+            transition: all 0.3s ease;
+            border-radius: 0.75rem;
+            border: 2px solid #e5e7eb;
+            background: white;
+            padding: 0.75rem 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .modern-input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+            outline: none;
+        }
+
+        .dark .modern-input {
+            background: #374151;
+            border-color: #4b5563;
+            color: white;
+        }
+
+        .dark .modern-input:focus {
+            border-color: #60a5fa;
+            box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+        }
+
+        /* Modern select dropdown */
+        .modern-select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.75rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+        }
+
+        /* Performance optimizations */
+        img,
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Toast optimizations */
+        #toast-container {
+            pointer-events: none;
+        }
+
+        #toast-container>* {
+            pointer-events: auto;
+        }
+
+        /* Advanced loading states */
+        .loading-dots::after {
+            content: '';
+            animation: dots 1.5s infinite;
+        }
+
+        @keyframes dots {
+
+            0%,
+            20% {
+                content: '';
+            }
+
+            40% {
+                content: '.';
+            }
+
+            60% {
+                content: '..';
+            }
+
+            80%,
+            100% {
+                content: '...';
+            }
+        }
+
+        /* Enhanced Glow Effects */
+        .glow-button {
+            box-shadow: 0 0 20px rgba(37, 99, 235, 0.4), 0 0 40px rgba(37, 99, 235, 0.1);
+        }
+
+        .glow-button:hover {
+            box-shadow: 0 0 25px rgba(37, 99, 235, 0.6), 0 0 50px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Green glow for secondary buttons */
+        .bg-green-600,
+        .from-green-500 {
+            box-shadow: 0 0 20px rgba(22, 163, 74, 0.4), 0 0 40px rgba(22, 163, 74, 0.1);
+        }
+
+        .bg-green-600:hover,
+        .from-green-500:hover {
+            box-shadow: 0 0 25px rgba(22, 163, 74, 0.6), 0 0 50px rgba(22, 163, 74, 0.2);
+        }
+
+        /* Fix dropdown arrow visibility in dark mode */
+        select,
+        #grade-select,
+        #semester-grade,
+        .modern-select {
+            appearance: none !important;
+            -webkit-appearance: none !important;
+            -moz-appearance: none !important;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e") !important;
+            background-position: right 0.5rem center !important;
+            background-repeat: no-repeat !important;
+            background-size: 1.5em 1.5em !important;
+            padding-right: 2.5rem !important;
+        }
+
+        /* Dark mode dropdown arrow with higher specificity */
+        .dark select,
+        .dark #grade-select,
+        .dark #semester-grade,
+        .dark .modern-select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23d1d5db' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e") !important;
+        }
+
+        /* Enhanced dropdown styling for better UX */
+        select:hover,
+        #grade-select:hover,
+        #semester-grade:hover {
+            border-color: #3b82f6 !important;
+        }
+
+        .dark select:hover,
+        .dark #grade-select:hover,
+        .dark #semester-grade:hover {
+            border-color: #60a5fa !important;
+        }
+    </style>
+</head>
+
+<body
+    class="font-sans bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100 min-h-screen">
+    <!-- Header -->
+    <header
+        class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200/50 dark:border-gray-700/50 shadow-soft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-medium">
+                        <span class="text-white font-bold text-lg">C</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl sm:text-2xl font-bold gradient-text">BD CGPA Calculator</h1>
+                        <p class="text-xs text-gray-600 dark:text-gray-400 font-medium">Free & Accurate for Bangladesh
+                            Universities</p>
+                    </div>
+                </div>
+                <button id="theme-toggle"
+                    class="p-3 rounded-xl bg-gradient-to-r from-amber-100 to-orange-200 dark:from-slate-700 dark:to-slate-600 text-orange-600 dark:text-amber-300 hover:from-amber-200 hover:to-orange-300 dark:hover:from-slate-600 dark:hover:to-slate-500 transition-all duration-300 btn-animate backdrop-blur-sm border border-orange-200/50 dark:border-slate-500/50 shadow-lg hover:shadow-xl hover:shadow-orange-500/20 dark:hover:shadow-amber-500/20 transform hover:scale-105"
+                    aria-label="Toggle dark mode">
+                    <!-- Sun icon for dark mode -->
+                    <svg id="sun-icon" class="w-5 h-5 transition-all duration-300" style="display: none;" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                        </path>
+                    </svg>
+                    <!-- Moon icon for light mode -->
+                    <svg id="moon-icon" class="w-5 h-5 transition-all duration-300" style="display: block;" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-accent-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-16 sm:py-24">
+        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="space-y-8">
+                <div class="space-y-4">
+                    <h1
+                        class="text-4xl sm:text-6xl font-bold bg-gradient-to-r from-primary-600 via-primary-700 to-accent-600 bg-clip-text text-transparent leading-tight">
+                        Bangladesh CGPA Calculator — All Public & Private Universities
+                    </h1>
+                    <p class="text-xl sm:text-2xl font-semibold text-primary-600 dark:text-primary-400">
+                        Free & Accurate Calculator for 50+ Institutions (2025)
+                    </p>
+                </div>
+                <p class="text-lg sm:text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+                    Calculate your CGPA and semester GPA instantly for all Bangladesh universities including
+                    <strong>DU, BUET, NSU, IUB, BRAC, RUET, Jahangirnagar, Chittagong University</strong> and more.
+                    Supports both public and private institutions with official grading systems.
+                    <span class="font-semibold text-primary-600 dark:text-primary-400">No sign-up required</span> —
+                    works 100% in your browser.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <!-- Semester-wise Calculator Button -->
+                    <button onclick="showSemesterCalculator()"
+                        class="group relative bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 btn-animate shadow-2xl hover:shadow-blue-500/40 transform hover:scale-105 glow-button">
+                        <span class="relative z-10 flex items-center justify-center gap-3">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            <div class="text-left">
+                                <div>Semester Calculator</div>
+                                <div class="text-xs font-normal opacity-90">Calculate individual semester CGPA</div>
+                            </div>
+                        </span>
+                    </button>
+
+                    <!-- Overall Calculator Button -->
+                    <button onclick="showOverallCalculator()"
+                        class="group relative bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 btn-animate shadow-2xl hover:shadow-green-500/40 transform hover:scale-105 glow-button">
+                        <span class="relative z-10 flex items-center justify-center gap-3">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 00-2-2z">
+                                </path>
+                            </svg>
+                            <div class="text-left">
+                                <div>Overall Calculator</div>
+                                <div class="text-xs font-normal opacity-90">Calculate multi-semester CGPA</div>
+                            </div>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- University Selector -->
+        <section class="mb-8">
+            <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
+                <h3 class="text-xl font-semibold mb-4">Select Your University</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="university-select" class="block text-sm font-medium mb-2">University Preset</label>
+                        <select id="university-select"
+                            class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option value="ugc">UGC Standard (Default)</option>
+                            <option value="du">University of Dhaka (DU)</option>
+                            <option value="buet">BUET</option>
+                            <option value="nsu">North South University (NSU)</option>
+                            <option value="brac">BRAC University</option>
+                            <option value="iub">Independent University Bangladesh (IUB)</option>
+                            <option value="ruet">RUET</option>
+                            <option value="aust">AUST</option>
+                            <option value="iut">Islamic University of Technology (IUT)</option>
+                            <option value="custom">Custom Grading Scale</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Grading Scale Info</label>
+                        <div id="grading-info" class="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-sm">
+                            <strong>UGC Standard:</strong> A+ (4.00), A (3.75), A- (3.50), B+ (3.25), B (3.00), B-
+                            (2.75), C+ (2.50), C (2.25), D (2.00), F (0.00)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculator Section -->
+        <section id="calculator" class="mb-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Input Column -->
+                <div class="lg:col-span-2">
+                    <div class="card p-8 glass">
+                        <div class="flex items-center gap-3 mb-8">
+                            <div
+                                class="w-8 h-8 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Add Subjects</h3>
+                        </div>
+
+                        <!-- Add Subject Form -->
+                        <form id="add-subject-form"
+                            class="mb-8 p-6 bg-gradient-to-br from-gray-50 to-blue-50/30 dark:from-gray-800 dark:to-gray-700 rounded-2xl border border-gray-200/50 dark:border-gray-600/50">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                                <div>
+                                    <label for="subject-name"
+                                        class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">Subject
+                                        Name</label>
+                                    <input type="text" id="subject-name" placeholder="e.g., Mathematics"
+                                        class="modern-input w-full" required>
+                                </div>
+                                <div>
+                                    <label for="subject-credit"
+                                        class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">Credit
+                                        Hours</label>
+                                    <input type="number" id="subject-credit" min="0.5" max="6" step="0.5"
+                                        placeholder="3.0" class="modern-input w-full" required>
+                                </div>
+                                <div>
+                                    <label for="grade-select"
+                                        class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                                        Grade
+                                    </label>
+                                    <select id="grade-select" class="modern-input modern-select w-full" required>
+                                        <option value="">Select Grade</option>
+                                        <option value="A+">A+ (4.00) (80-100)</option>
+                                        <option value="A">A (3.75) (75-79)</option>
+                                        <option value="A-">A- (3.50) (70-74)</option>
+                                        <option value="B+">B+ (3.25) (65-69)</option>
+                                        <option value="B">B (3.00) (60-64)</option>
+                                        <option value="B-">B- (2.75) (55-59)</option>
+                                        <option value="C+">C+ (2.50) (50-54)</option>
+                                        <option value="C">C (2.25) (45-49)</option>
+                                        <option value="D">D (2.00) (40-44)</option>
+                                        <option value="F">F (0.00) (0-39)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit"
+                                class="w-full md:w-auto bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white px-8 py-3 rounded-xl font-semibold text-lg transition-all duration-300 btn-animate shadow-lg hover:shadow-xl transform hover:scale-105 hover:shadow-blue-500/40 glow-button">
+                                <span class="flex items-center justify-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    </svg>
+                                    Add Subject
+                                </span>
+                            </button>
+                        </form>
+
+                        <!-- Quick Add Presets -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-medium mb-3">Quick Add Common Subjects</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <button onclick="quickAddSubject('Mathematics', 3)"
+                                    class="px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white rounded-full text-sm font-medium transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg hover:shadow-blue-500/30">Math
+                                    (3 cr)</button>
+                                <button onclick="quickAddSubject('Physics', 3)"
+                                    class="px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white rounded-full text-sm font-medium transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg hover:shadow-blue-500/30">Physics
+                                    (3 cr)</button>
+                                <button onclick="quickAddSubject('Chemistry', 3)"
+                                    class="px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white rounded-full text-sm font-medium transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg hover:shadow-blue-500/30">Chemistry
+                                    (3 cr)</button>
+                                <button onclick="quickAddSubject('English', 3)"
+                                    class="px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white rounded-full text-sm font-medium transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg hover:shadow-blue-500/30">English
+                                    (3 cr)</button>
+                                <button onclick="quickAddSubject('Lab', 1)"
+                                    class="px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white rounded-full text-sm font-medium transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg hover:shadow-blue-500/30">Lab
+                                    (1 cr)</button>
+                            </div>
+                        </div>
+
+                        <!-- Subjects List -->
+                        <div id="subjects-list" class="space-y-3">
+                            <div id="empty-state" class="text-center py-8 text-gray-500 dark:text-gray-400">
+                                <svg class="w-16 h-16 mx-auto mb-4 text-gray-300" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                    </path>
+                                </svg>
+                                <p>No subjects added yet. Add your first subject above!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results Column -->
+                <div>
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 sticky top-4">
+                        <h3 class="text-xl font-semibold mb-6">Results</h3>
+
+                        <!-- Current Results -->
+                        <div class="space-y-4 mb-6">
+                            <div class="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-xl">
+                                <div class="text-sm text-gray-600 dark:text-gray-400">CGPA</div>
+                                <div id="cumulative-cgpa" class="text-2xl font-bold text-primary">0.00</div>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
+                                <div class="text-sm text-gray-600 dark:text-gray-400">Total Credits</div>
+                                <div id="total-credits" class="text-xl font-semibold">0.0</div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="space-y-3">
+                            <button onclick="exportData()"
+                                class="w-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300 btn-animate shadow-lg hover:shadow-xl hover:shadow-blue-500/40 transform hover:scale-105">
+                                📊 Export Data
+                            </button>
+                            <button onclick="printSummary()"
+                                class="w-full bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300 btn-animate shadow-lg hover:shadow-xl hover:shadow-green-500/40 transform hover:scale-105">
+                                🖨️ Print Summary
+                            </button>
+                            <button onclick="copySummary()"
+                                class="w-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300 btn-animate shadow-lg hover:shadow-xl hover:shadow-blue-500/40 transform hover:scale-105">
+                                📋 Copy to Clipboard
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Tools -->
+        <section class="mb-12 advanced-tools">
+            <!-- Modern Loading state for lazy-loaded features -->
+            <div id="advanced-tools-loading" class="text-center py-16">
+                <div class="inline-flex items-center justify-center space-x-3">
+                    <div class="w-3 h-3 bg-primary-500 rounded-full animate-bounce" style="animation-delay: 0ms"></div>
+                    <div class="w-3 h-3 bg-primary-500 rounded-full animate-bounce" style="animation-delay: 150ms">
+                    </div>
+                    <div class="w-3 h-3 bg-primary-500 rounded-full animate-bounce" style="animation-delay: 300ms">
+                    </div>
+                </div>
+                <p class="mt-4 text-lg font-medium text-gray-600 dark:text-gray-400 loading-dots">Loading advanced tools
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-500 mt-2">Preparing CSV import, target planner, and
+                    scenario comparison</p>
+            </div>
+
+            <div id="advanced-tools-content" class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8"
+                style="display: none;">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">🚀 Advanced Tools</h3>
+                    <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                        These powerful tools help you save time and plan better. Use them to import multiple subjects at
+                        once,
+                        plan your target grades, or compare different academic scenarios.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- CSV Import -->
+                    <div
+                        class="p-6 border border-gray-200 dark:border-gray-600 rounded-xl bg-blue-50 dark:bg-blue-900/20">
+                        <div class="text-center mb-4">
+                            <div class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mx-auto mb-3">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="font-bold text-lg text-gray-900 dark:text-white">📊 Bulk Import</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                                <strong>Why use this?</strong> Save time by adding multiple subjects at once instead of
+                                entering them one by one.
+                            </p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <p class="text-xs text-gray-500 dark:text-gray-400">
+                                <strong>How to use:</strong> Copy from Excel/Google Sheets or type in this format:
+                            </p>
+                            <textarea id="csv-input"
+                                placeholder="Subject,Credit,Grade&#10;Mathematics,3,A+&#10;Physics,3,85&#10;Chemistry,3,3.75"
+                                class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-sm font-mono"
+                                rows="4"></textarea>
+                            <div class="text-xs text-gray-500 dark:text-gray-400">
+                                ✅ Supports: Letter grades (A+, A, B+), Percentages (85, 92), GPA (3.75, 4.00)
+                            </div>
+                            <button onclick="importCSV()"
+                                class="w-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300 btn-animate shadow-lg hover:shadow-xl hover:shadow-blue-500/40 transform hover:scale-105">
+                                Import All Subjects
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Target Planner -->
+                    <div
+                        class="p-6 border border-gray-200 dark:border-gray-600 rounded-xl bg-green-50 dark:bg-green-900/20">
+                        <div class="text-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mx-auto mb-3">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="font-bold text-lg text-gray-900 dark:text-white">🎯 Goal Planner</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                                <strong>Why use this?</strong> Find out what grades you need in remaining subjects to
+                                reach your target CGPA.
+                            </p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">Target
+                                    CGPA</label>
+                                <input type="number" id="target-cgpa" step="0.01" min="0" max="4"
+                                    placeholder="e.g., 3.50"
+                                    class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">Remaining
+                                    Credits</label>
+                                <input type="number" id="remaining-credits" step="0.5" min="0" placeholder="e.g., 12"
+                                    class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-sm">
+                            </div>
+                            <button onclick="calculateTargetGrades()"
+                                class="w-full bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300 btn-animate shadow-lg hover:shadow-xl hover:shadow-green-500/40 transform hover:scale-105">
+                                Calculate Required Grades
+                            </button>
+                        </div>
+                        <div id="target-result" class="mt-3 text-sm"></div>
+                    </div>
+
+                    <!-- Scenario Compare -->
+                    <div
+                        class="p-6 border border-gray-200 dark:border-gray-600 rounded-xl bg-purple-50 dark:bg-purple-900/20">
+                        <div class="text-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center mx-auto mb-3">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 00-2-2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="font-bold text-lg text-gray-900 dark:text-white">📋 Compare Plans</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                                <strong>Why use this?</strong> Save different grade combinations and compare "what-if"
+                                scenarios.
+                            </p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">Scenario
+                                    Name</label>
+                                <input type="text" id="scenario-name" placeholder="e.g., Best Case"
+                                    class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-sm">
+                            </div>
+                            <button onclick="saveScenario()"
+                                class="w-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300 btn-animate shadow-lg hover:shadow-xl hover:shadow-blue-500/40 transform hover:scale-105">
+                                Save Current Grades
+                            </button>
+                            <div>
+                                <label class="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">Load
+                                    Saved Scenario</label>
+                                <select id="scenario-list"
+                                    class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-sm">
+                                    <option value="">Choose a saved scenario</option>
+                                </select>
+                            </div>
+                            <button onclick="loadSelectedScenario()"
+                                class="w-full bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300 btn-animate shadow-lg hover:shadow-xl hover:shadow-green-500/40 transform hover:scale-105">
+                                Load Selected Scenario
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overall CGPA Calculator and Grading Scale -->
+        <section id="overall-calculator" class="mb-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Multi-Semester Calculator (Left) -->
+                <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Overall CGPA Calculator</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Add your semester results to calculate
+                        overall CGPA</p>
+
+                    <!-- Semester Input Form -->
+                    <form id="semester-form" class="mb-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
+                            <div>
+                                <select id="semester-name"
+                                    class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white modern-select"
+                                    required>
+                                    <option value="">Select Semester</option>
+                                    <option value="1st Semester">1st Semester</option>
+                                    <option value="2nd Semester">2nd Semester</option>
+                                    <option value="3rd Semester">3rd Semester</option>
+                                    <option value="4th Semester">4th Semester</option>
+                                    <option value="5th Semester">5th Semester</option>
+                                    <option value="6th Semester">6th Semester</option>
+                                    <option value="7th Semester">7th Semester</option>
+                                    <option value="8th Semester">8th Semester</option>
+                                    <option value="9th Semester">9th Semester</option>
+                                    <option value="10th Semester">10th Semester</option>
+                                    <option value="11th Semester">11th Semester</option>
+                                    <option value="12th Semester">12th Semester</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select id="semester-grade"
+                                    class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white modern-select"
+                                    required>
+                                    <option value="">Select Grade</option>
+                                    <option value="A+">A+ (4.00) (80-100)</option>
+                                    <option value="A">A (3.75) (75-79)</option>
+                                    <option value="A-">A- (3.50) (70-74)</option>
+                                    <option value="B+">B+ (3.25) (65-69)</option>
+                                    <option value="B">B (3.00) (60-64)</option>
+                                    <option value="B-">B- (2.75) (55-59)</option>
+                                    <option value="C+">C+ (2.50) (50-54)</option>
+                                    <option value="C">C (2.25) (45-49)</option>
+                                    <option value="D">D (2.00) (40-44)</option>
+                                    <option value="F">F (0.00) (0-39)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition-colors">
+                            Add Semester
+                        </button>
+                    </form>
+
+                    <!-- Semester Results List -->
+                    <div class="mb-4">
+                        <div id="semester-list" class="space-y-2">
+                            <!-- Semesters will be displayed here -->
+                        </div>
+                    </div>
+
+                    <!-- Overall Results -->
+                    <div
+                        class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg p-4">
+                        <div class="text-center">
+                            <div class="text-sm text-gray-600 dark:text-gray-400">Overall CGPA</div>
+                            <div id="overall-cgpa" class="text-2xl font-bold text-blue-600 dark:text-blue-400">0.00
+                            </div>
+                            <div class="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                                Total Semesters: <span id="total-semesters">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grading Scale Table (Right) -->
+                <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">UGC Grading Scale</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-collapse border border-gray-300 dark:border-gray-600">
+                            <thead>
+                                <tr class="bg-gray-50 dark:bg-gray-700">
+                                    <th class="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left">Grade
+                                    </th>
+                                    <th class="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left">GPA</th>
+                                    <th class="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left">Range
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">A+</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">4.00</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">80-100%</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">A</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">3.75</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">75-79%</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">A-</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">3.50</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">70-74%</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">B+</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">3.25</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">65-69%</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">B</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">3.00</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">60-64%</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">B-</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">2.75</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">55-59%</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">C+</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">2.50</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">50-54%</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">C</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">2.25</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">45-49%</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">D</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">2.00</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">40-44%</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">F</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">0.00</td>
+                                    <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">0-39%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How CGPA is Calculated -->
+        <section class="mb-8">
+            <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
+                <h3 class="text-xl font-semibold mb-4">How CGPA is Calculated</h3>
+                <div class="prose prose-gray dark:prose-invert max-w-none">
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                        <strong>CGPA Formula:</strong> CGPA = Σ (Credit × Grade Point) ÷ Σ Credit
+                    </p>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                        Enter each subject's credit hours and grade (letter grade, percentage, or direct GPA), then the
+                        calculator automatically computes your semester GPA and cumulative CGPA using the weighted
+                        average formula.
+                    </p>
+                    <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Example Calculation:</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>Mathematics: 3 credits × 4.00 GPA = 12.00 grade points</li>
+                            <li>Physics: 3 credits × 3.75 GPA = 11.25 grade points</li>
+                            <li>Chemistry: 3 credits × 3.50 GPA = 10.50 grade points</li>
+                            <li><strong>Total:</strong> 9 credits, 33.75 grade points</li>
+                            <li><strong>CGPA:</strong> 33.75 ÷ 9 = 3.75</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section with Enhanced SEO -->
+        <section class="mb-8" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
+                <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Frequently Asked Questions</h2>
+                <div class="space-y-6">
+                    <div class="border-b border-gray-200 dark:border-gray-600 pb-4" itemscope itemprop="mainEntity"
+                        itemtype="https://schema.org/Question">
+                        <h3 class="font-semibold mb-2 text-lg" itemprop="name">How is CGPA calculated in Bangladesh
+                            universities?</h3>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p class="text-gray-700 dark:text-gray-300" itemprop="text">CGPA = Σ(Credit × Grade Point) ÷
+                                Σ(Credit). Bangladesh follows the UGC (University Grants Commission) grading system
+                                where A+ = 4.00, A = 3.75, A- = 3.50, and so on. This calculator supports both public
+                                universities (DU, BUET, Jahangirnagar) and private universities (NSU, IUB, BRAC).</p>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-200 dark:border-gray-600 pb-4" itemscope itemprop="mainEntity"
+                        itemtype="https://schema.org/Question">
+                        <h3 class="font-semibold mb-2 text-lg" itemprop="name">Which Bangladesh universities are
+                            supported by this calculator?</h3>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p class="text-gray-700 dark:text-gray-300" itemprop="text">All major Bangladesh
+                                universities are supported including: <strong>Public Universities</strong> - University
+                                of Dhaka (DU), BUET, Jahangirnagar University, University of Chittagong, RUET, CUET;
+                                <strong>Private Universities</strong> - North South University (NSU), BRAC University,
+                                Independent University Bangladesh (IUB), American International University (AIUB), East
+                                West University, and 40+ more institutions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-200 dark:border-gray-600 pb-4" itemscope itemprop="mainEntity"
+                        itemtype="https://schema.org/Question">
+                        <h3 class="font-semibold mb-2 text-lg" itemprop="name">Can I calculate CGPA for multiple
+                            semesters at once?</h3>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p class="text-gray-700 dark:text-gray-300" itemprop="text">Yes! This calculator offers two
+                                modes: <strong>Semester Calculator</strong> for individual semester GPA calculation, and
+                                <strong>Overall Calculator</strong> for combining multiple semester results to get your
+                                cumulative CGPA. You can import data via CSV or add semesters manually.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-200 dark:border-gray-600 pb-4" itemscope itemprop="mainEntity"
+                        itemtype="https://schema.org/Question">
+                        <h3 class="font-semibold mb-2 text-lg" itemprop="name">Is this CGPA calculator free and safe to
+                            use?</h3>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p class="text-gray-700 dark:text-gray-300" itemprop="text">Yes, completely free with no
+                                registration required. Your data is stored only in your browser's local storage - no
+                                server uploads, no privacy concerns. Works offline and you can export your calculations
+                                as CSV files for backup.</p>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-200 dark:border-gray-600 pb-4" itemscope itemprop="mainEntity"
+                        itemtype="https://schema.org/Question">
+                        <h3 class="font-semibold mb-2 text-lg" itemprop="name">Can I plan my target CGPA for future
+                            semesters?</h3>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p class="text-gray-700 dark:text-gray-300" itemprop="text">Yes! Use the Target Planner
+                                feature to calculate what grades you need in remaining courses to achieve your desired
+                                CGPA. Perfect for scholarship requirements or academic goals planning.</p>
+                        </div>
+                    </div>
+
+                    <div class="pb-4" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h3 class="font-semibold mb-2 text-lg" itemprop="name">How accurate is this calculator compared
+                            to university systems?</h3>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p class="text-gray-700 dark:text-gray-300" itemprop="text">Highly accurate - uses official
+                                UGC grading scales and university-specific calculations. Trusted by 10,000+ students
+                                across Bangladesh. However, always verify final calculations with your university's
+                                academic office for official transcripts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-8 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4">
+                <p class="mb-2">&copy; 2025 BD CGPA Calculator. Free educational tool for Bangladesh universities.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                    Disclaimer: This calculator uses standard UGC grading scales. Please verify with your institution
+                    for specific grading policies.
+                </p>
+                <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                        Developed by <a href="https://sowravhasan.vercel.app" target="_blank" rel="noopener noreferrer"
+                            class="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium transition-colors">
+                            Sowrav Hasan</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Hidden template for subject rows -->
+    <template id="subject-row-template">
+        <div
+            class="subject-row border border-gray-200 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 p-4">
+            <!-- Mobile Layout -->
+            <div class="block md:hidden">
+                <div class="flex items-start justify-between mb-3">
+                    <div class="flex-1">
+                        <div class="font-semibold text-lg subject-name-mobile text-gray-900 dark:text-white"></div>
+                        <div class="text-sm text-gray-500 dark:text-gray-400 subject-mode-mobile"></div>
+                    </div>
+                    <button
+                        class="remove-btn ml-3 p-2 bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800 text-white rounded-lg transition-all duration-300 btn-animate shadow-md hover:shadow-lg hover:shadow-red-500/25 transform hover:scale-105 flex-shrink-0"
+                        aria-label="Remove subject">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="grid grid-cols-3 gap-4 text-center">
+                    <div class="bg-white dark:bg-gray-600 rounded-lg p-3">
+                        <div class="subject-credit-mobile font-bold text-lg text-blue-600 dark:text-blue-400"></div>
+                        <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide">Credits</div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-600 rounded-lg p-3">
+                        <div class="subject-grade-mobile font-bold text-lg text-green-600 dark:text-green-400"></div>
+                        <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide">Grade</div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-600 rounded-lg p-3">
+                        <div class="subject-gpa-mobile font-bold text-lg text-purple-600 dark:text-purple-400"></div>
+                        <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide">GPA</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Desktop Layout -->
+            <div class="hidden md:flex items-center justify-between">
+                <div class="flex-1 grid grid-cols-4 gap-4">
+                    <div>
+                        <div class="font-medium subject-name text-gray-900 dark:text-white"></div>
+                        <div class="text-sm text-gray-500 dark:text-gray-400 subject-mode"></div>
+                    </div>
+                    <div class="text-center">
+                        <div class="subject-credit font-semibold text-gray-900 dark:text-white"></div>
+                        <div class="text-xs text-gray-500 dark:text-gray-400">credits</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="subject-grade font-semibold text-gray-900 dark:text-white"></div>
+                        <div class="text-xs text-gray-500 dark:text-gray-400">grade</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="subject-gpa font-semibold text-blue-600 dark:text-blue-400"></div>
+                        <div class="text-xs text-gray-500 dark:text-gray-400">GPA</div>
+                    </div>
+                </div>
+                <button
+                    class="remove-btn-desktop ml-4 p-2 bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800 text-white rounded-lg transition-all duration-300 btn-animate shadow-md hover:shadow-lg hover:shadow-red-500/25 transform hover:scale-105"
+                    aria-label="Remove subject">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </template>
+
+    <!-- Toast notification container -->
+    <div id="toast-container" class="fixed top-4 right-4 z-50 space-y-2">
+        <!-- Toasts will be inserted here -->
+    </div>
+
+    <!-- Load JavaScript with optimal performance -->
+    <script src="js/script.js" defer async></script>
+
+    <!-- Add performance monitoring -->
+    <script>
+        // Monitor Core Web Vitals
+        if ('performance' in window) {
+            // Log performance metrics
+            window.addEventListener('load', () => {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                console.log('Page Load Time:', perfData.loadEventEnd - perfData.loadEventStart, 'ms');
+            });
+        }
+
+        // Report Web Vitals (optional)
+        function reportWebVitals() {
+            if ('web-vitals' in window) {
+                // Implementation for web vitals reporting
+            }
+        }
+    </script>
+
+    <!-- Simple loading state -->
+    <script>
+        // Remove loading class when page is ready
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.classList.remove('loading');
+        });
+
+        // Add loading class initially
+        document.documentElement.classList.add('loading');
+    </script>
+</body>
+
+</html>

@@ -1,21 +1,24 @@
 # Netlify Build Configuration for SEO Optimization
-# This file configures build settings, plugins, and deployment for better SEO
+# Clean and Error-Free Version
 
 [build]
-  # Build command (if using build process)
+  # Build command (for static site)
   command = "echo 'Static site - no build required'"
   
-  # Publish directory
+  # Publish directory (update if your output folder is different, e.g. "public")
   publish = "."
-  
-  # Build environment variables for SEO
+
+  # Build environment variables
   [build.environment]
     NODE_ENV = "production"
     HUGO_VERSION = "0.118.2"
 
+# ------------------------------
 # SEO and Performance Plugins
+# ------------------------------
+
 [[plugins]]
-  # Sitemap generator plugin
+  # Sitemap generator
   package = "@netlify/plugin-sitemap"
   
   [plugins.inputs]
@@ -31,11 +34,22 @@
     prettyURLs = true
 
 [[plugins]]
-  # Essential for SEO - automatically optimizes images
+  # Robots.txt generator
+  package = "@netlify/plugin-robots-txt"
+
+  [plugins.inputs]
+    policy = [
+      { userAgent = "*", allow = "/" }
+    ]
+    sitemap = "https://bdcgpacalculator.netlify.app/sitemap.xml"
+    host = "https://bdcgpacalculator.netlify.app"
+
+[[plugins]]
+  # Optimize images automatically
   package = "netlify-plugin-image-optim"
 
 [[plugins]]
-  # Minify HTML, CSS, JS for better performance and SEO
+  # Minify HTML, CSS, JS
   package = "netlify-plugin-minify-html"
   
   [plugins.inputs]
@@ -46,10 +60,12 @@
   package = "netlify-plugin-prerender-spa"
   
   [plugins.inputs]
-    publicPath = "/"
-    routes = ["/"]
+    routes = ["/", "/cgpa-calculator", "/gpa-calculator"]
 
-# Headers for all environments
+# ------------------------------
+# Security + SEO Headers
+# ------------------------------
+
 [[headers]]
   for = "/*"
   [headers.values]
@@ -57,15 +73,16 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Link = "<https://bdcgpacalculator.netlify.app/>; rel=\"canonical\""
 
-# Production-specific headers for SEO
+# Production-specific headers
 [context.production.headers]
   for = "/*"
   [context.production.headers.values]
     X-Robots-Tag = "index, follow"
     Cache-Control = "public, max-age=3600"
 
-# Development headers
+# Preview and Branch Deploy headers
 [context.deploy-preview.headers]
   for = "/*"
   [context.deploy-preview.headers.values]
@@ -76,12 +93,10 @@
   [context.branch-deploy.headers.values]
     X-Robots-Tag = "noindex, nofollow"
 
-# Edge handlers for SEO (future enhancement)
-[[edge_handlers]]
-  path = "/api/*"
-  function = "edge-seo"
+# ------------------------------
+# Build Processing
+# ------------------------------
 
-# Forms (if you add contact/feedback forms)
 [build.processing]
   skip_processing = false
 
@@ -99,7 +114,10 @@
 [build.processing.images]
   compress = true
 
-# Redirect rules for SEO
+# ------------------------------
+# Redirect Rules for SEO
+# ------------------------------
+
 [[redirects]]
   from = "/cgpa-calculator"
   to = "/"
@@ -112,11 +130,12 @@
   status = 301
   force = true
 
+# ------------------------------
 # Environment-specific settings
-[context.production]
-  [context.production.environment]
-    HUGO_ENV = "production"
-    
-[context.deploy-preview]
-  [context.deploy-preview.environment]
-    HUGO_ENV = "staging"
+# ------------------------------
+
+[context.production.environment]
+  HUGO_ENV = "production"
+
+[context.deploy-preview.environment]
+  HUGO_ENV = "staging"

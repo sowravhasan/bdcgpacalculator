@@ -4,4 +4,4 @@ Disallow: /.git/
 Disallow: /.vscode/
 Disallow: /README.md
 
-Sitemap: https://bdbillcalculator.netlify.app/sitemap.xml
+Sitemap: https://bdcgpacalculator.netlify.app/sitemap.xml

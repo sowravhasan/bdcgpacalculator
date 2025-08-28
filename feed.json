@@ -15,6 +15,23 @@
     },
     "items": [
         {
+            "id": "4",
+            "url": "https://bdcgpacalculator.netlify.app/#search-console-fix",
+            "title": "Google Search Console Optimization - Fixed Duplicate FAQPage Error",
+            "content_text": "Resolved all Google Search Console structured data errors including duplicate FAQPage schema. Enhanced SEO optimization ensures better search visibility for Bangladesh students looking for university CGPA calculators.",
+            "content_html": "<p>Resolved all Google Search Console structured data errors including:</p><ul><li>Fixed duplicate FAQPage schema markup</li><li>Consolidated JSON-LD structured data</li><li>Enhanced meta tags for university searches</li><li>Improved accessibility with ARIA labels</li><li>Better Core Web Vitals performance</li></ul><p>These fixes ensure students can easily find our calculator when searching for university-specific CGPA tools.</p>",
+            "summary": "Fixed Google Search Console errors for perfect search engine visibility.",
+            "date_published": "2025-08-28T10:45:00Z",
+            "date_modified": "2025-08-28T10:45:00Z",
+            "tags": [
+                "SEO",
+                "Google Search Console",
+                "Structured Data",
+                "Fix",
+                "Search Optimization"
+            ]
+        },
+        {
             "id": "1",
             "url": "https://bdcgpacalculator.netlify.app/#v1.4-seo-optimization",
             "title": "Major SEO Optimization Update - v1.4 Released",

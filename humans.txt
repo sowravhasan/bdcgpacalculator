@@ -16,12 +16,12 @@ Bangladesh Universities: For grading system information
 Students: For feedback and feature requests
 
 /* SITE */
-Last Update: 2025/08/27
+Last Update: 2025/08/28
 Language: English / Bengali
 Standards: HTML5, CSS3, JavaScript ES6+
 Components: TailwindCSS, Vanilla JavaScript
 Software: VS Code, Git, GitHub
-SEO: Optimized for Bangladesh university searches
+SEO: Optimized for Bangladesh university searches, Fixed Google Search Console errors
 Performance: Core Web Vitals optimized
 Accessibility: WCAG 2.1 AA compliant
 
@@ -59,7 +59,8 @@ v1.0: Initial CGPA calculator
 v1.1: Added multiple university support
 v1.2: Mobile optimization
 v1.3: PWA implementation
-v1.4: SEO optimization (current)
+v1.4: SEO optimization
+v1.5: Fixed Google Search Console errors (current)
 
 /* CONTACT */
 For universities wanting to be added:

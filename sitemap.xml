@@ -7,7 +7,7 @@
     <!-- Main homepage - Primary landing page for CGPA calculator -->
     <url>
         <loc>https://bdcgpacalculator.netlify.app/</loc>
-        <lastmod>2025-08-27</lastmod>
+        <lastmod>2025-08-28</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://bdcgpacalculator.netlify.app/" />

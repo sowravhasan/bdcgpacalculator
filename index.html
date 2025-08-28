@@ -108,7 +108,7 @@
         /* Ensure consistent button heights */
         button,
         .btn-animate {
-            min-height: 44px;
+            min-height: 10px;
         }
 
         /* Reserve space for images */
@@ -119,137 +119,141 @@
     </style>
 
     <!-- Consolidated Structured Data - JSON-LD -->
-    <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "WebApplication",
+      "@id": "https://bdcgpacalculator.netlify.app/#webapp",
+      "name": "Bangladesh CGPA Calculator - GPA & University Result Tool",
+      "description": "Free online CGPA & GPA calculator for all Bangladeshi universities (public & private). Supports DU, BUET, NSU, IUB, BRAC, and more.",
+      "url": "https://bdcgpacalculator.netlify.app/",
+      "image": "https://bdcgpacalculator.netlify.app/assets/preview.jpg",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://sowravhasan.vercel.app/#person",
+        "name": "Sowrav Hasan",
+        "url": "https://sowravhasan.vercel.app/",
+        "sameAs": [
+          "https://www.facebook.com/sowravhasan0",
+          "https://www.linkedin.com/in/sowrav-hasan/",
+          "https://github.com/sowravhasan"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "@id": "https://sowravhasan.vercel.app/#person",
+        "name": "Sowrav Hasan"
+      },
+      "inLanguage": "en",
+      "datePublished": "2024-01-01",
+      "dateModified": "2025-08-28",
+      "keywords": "Bangladesh CGPA calculator, GPA calculator, University result tool, DU, BUET, NSU, IUB, BRAC, Public University, Private University, UGC grading system",
+      "softwareVersion": "2.1",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1247",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "featureList": [
+        "CGPA calculation for all Bangladesh universities",
+        "Supports UGC grading system",
+        "Multiple GPA calculation modes",
+        "CSV import/export",
+        "Target CGPA planner",
+        "Works offline",
+        "No login required"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bdcgpacalculator.netlify.app/#website",
+      "url": "https://bdcgpacalculator.netlify.app/",
+      "name": "BD CGPA Calculator",
+      "description": "Free GPA & CGPA Calculator for all Bangladesh Universities",
+      "publisher": {
+        "@id": "https://sowravhasan.vercel.app/#person"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://bdcgpacalculator.netlify.app/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bdcgpacalculator.netlify.app/#faq",
+      "mainEntity": [
         {
-          "@type": "WebApplication",
-          "@id": "https://bdcgpacalculator.netlify.app/#webapp",
-          "name": "Bangladesh CGPA Calculator",
-          "description": "Free CGPA and GPA calculator for all Bangladesh universities including public and private institutions like DU, BUET, NSU, IUB, BRAC University.",
-          "url": "https://bdcgpacalculator.netlify.app/",
-          "image": "https://bdcgpacalculator.netlify.app/assets/preview.jpg",
-          "screenshot": "https://bdcgpacalculator.netlify.app/assets/preview.jpg",
-          "applicationCategory": "EducationalApplication",
-          "operatingSystem": "Any",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-          },
-          "author": {
-            "@type": "Person",
-            "@id": "https://sowravhasan.vercel.app/#person",
-            "name": "Sowrav Hasan",
-            "url": "https://sowravhasan.vercel.app/",
-            "sameAs": ["https://sowravhasan.vercel.app/"]
-          },
-          "publisher": {
-            "@type": "Person",
-            "@id": "https://sowravhasan.vercel.app/#person"
-          },
-          "inLanguage": "en",
-          "datePublished": "2024-01-01",
-          "dateModified": "2025-08-28",
-          "keywords": "CGPA calculator, GPA calculator, Bangladesh university, DU, BUET, NSU, IUB, BRAC, public university, private university",
-          "applicationSubCategory": "Educational Tool",
-          "browserRequirements": "Requires JavaScript",
-          "softwareVersion": "2.1",
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "1247",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
-          "featureList": [
-            "CGPA calculation for all Bangladesh universities",
-            "Support for public and private institutions",
-            "Multiple grading systems",
-            "CSV import/export",
-            "Target grade planning",
-            "No registration required",
-            "Works offline"
-          ]
+          "@type": "Question",
+          "@id": "https://bdcgpacalculator.netlify.app/#faq1",
+          "name": "How is CGPA calculated in Bangladesh universities?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CGPA = Σ(Credit × Grade Point) ÷ Σ(Credit). Bangladesh follows the UGC grading system (A+ = 4.00, A = 3.75, A- = 3.50, etc). This calculator supports both public (DU, BUET, JU) and private (NSU, IUB, BRAC) universities."
+          }
         },
         {
-          "@type": "WebSite",
-          "@id": "https://bdcgpacalculator.netlify.app/#website",
-          "url": "https://bdcgpacalculator.netlify.app/",
-          "name": "BD CGPA Calculator",
-          "description": "Free CGPA Calculator for Bangladesh Universities",
-          "publisher": {
-            "@id": "https://sowravhasan.vercel.app/#person"
-          },
-          "potentialAction": [
-            {
-              "@type": "SearchAction",
-              "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://bdcgpacalculator.netlify.app/?q={search_term_string}"
-              },
-              "query-input": "required name=search_term_string"
-            }
-          ]
+          "@type": "Question",
+          "@id": "https://bdcgpacalculator.netlify.app/#faq2",
+          "name": "Which Bangladesh universities are supported by this calculator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All major Bangladesh universities: Public - DU, BUET, JU, CU, RUET, CUET; Private - NSU, BRAC, IUB, AIUB, EWU, and 40+ more."
+          }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://bdcgpacalculator.netlify.app/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "How is CGPA calculated in Bangladesh universities?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "CGPA = Σ(Credit × Grade Point) ÷ Σ(Credit). Bangladesh follows the UGC (University Grants Commission) grading system where A+ = 4.00, A = 3.75, A- = 3.50, and so on. This calculator supports both public universities (DU, BUET, Jahangirnagar) and private universities (NSU, IUB, BRAC)."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Which Bangladesh universities are supported by this calculator?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "All major Bangladesh universities are supported including: Public Universities - University of Dhaka (DU), BUET, Jahangirnagar University, University of Chittagong, RUET, CUET; Private Universities - North South University (NSU), BRAC University, Independent University Bangladesh (IUB), American International University (AIUB), East West University, and 40+ more institutions."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can I calculate CGPA for multiple semesters at once?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes! This calculator offers two modes: Semester Calculator for individual semester GPA calculation, and Overall Calculator for combining multiple semester results to get your cumulative CGPA. You can import data via CSV or add semesters manually."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is this CGPA calculator free and safe to use?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, completely free with no registration required. Your data is stored only in your browser's local storage - no server uploads, no privacy concerns. Works offline and you can export your calculations as CSV files for backup."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can I plan my target CGPA for future semesters?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes! Use the Target Planner feature to calculate what grades you need in remaining courses to achieve your desired CGPA. Perfect for scholarship requirements or academic goals planning."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How accurate is this calculator compared to university systems?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Highly accurate - uses official UGC grading scales and university-specific calculations. Trusted by 10,000+ students across Bangladesh. However, always verify final calculations with your university's academic office for official transcripts."
-              }
-            }
-          ]
+          "@type": "Question",
+          "@id": "https://bdcgpacalculator.netlify.app/#faq3",
+          "name": "Can I calculate CGPA for multiple semesters?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! There are two modes: Semester Calculator (for GPA) and Overall Calculator (for cumulative CGPA). You can import CSV data or add semesters manually."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://bdcgpacalculator.netlify.app/#faq4",
+          "name": "Is this CGPA calculator free and safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, 100% free. No signup required. Data stays in your browser only (local storage). No server uploads. Works offline. Export CSV backup anytime."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://bdcgpacalculator.netlify.app/#faq5",
+          "name": "Can I plan my target CGPA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! The Target Planner shows what grades you need to achieve your desired CGPA. Perfect for scholarships or academic goals."
+          }
+        },
+        {
+          "@type": "Question",
+          "@id": "https://bdcgpacalculator.netlify.app/#faq6",
+          "name": "How accurate is this calculator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Highly accurate – based on UGC grading rules. Verified by 10,000+ students. Still, always double-check with your university registrar."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
+
 
     <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
@@ -1326,90 +1330,57 @@
                 </div>
             </div>
         </section>
+<!-- FAQ Section -->
+<section class="mb-8">
+  <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
+    <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Frequently Asked Questions</h2>
+    <div class="space-y-6">
 
-        <!-- FAQ Section with Enhanced SEO -->
-        <section class="mb-8" itemscope itemtype="https://schema.org/FAQPage">
-            <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
-                <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Frequently Asked Questions</h2>
-                <div class="space-y-6">
-                    <div class="border-b border-gray-200 dark:border-gray-600 pb-4" itemscope itemprop="mainEntity"
-                        itemtype="https://schema.org/Question">
-                        <h3 class="font-semibold mb-2 text-lg" itemprop="name">How is CGPA calculated in Bangladesh
-                            universities?</h3>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p class="text-gray-700 dark:text-gray-300" itemprop="text">CGPA = Σ(Credit × Grade Point) ÷
-                                Σ(Credit). Bangladesh follows the UGC (University Grants Commission) grading system
-                                where A+ = 4.00, A = 3.75, A- = 3.50, and so on. This calculator supports both public
-                                universities (DU, BUET, Jahangirnagar) and private universities (NSU, IUB, BRAC).</p>
-                        </div>
-                    </div>
+      <div class="border-b border-gray-200 dark:border-gray-600 pb-4">
+        <h3 class="font-semibold mb-2 text-lg">How is CGPA calculated in Bangladesh universities?</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          CGPA = Σ(Credit × Grade Point) ÷ Σ(Credit). Bangladesh follows the UGC grading system where A+ = 4.00, A = 3.75, A- = 3.50, and so on. This calculator supports both public universities (DU, BUET, Jahangirnagar) and private universities (NSU, IUB, BRAC).
+        </p>
+      </div>
 
-                    <div class="border-b border-gray-200 dark:border-gray-600 pb-4" itemscope itemprop="mainEntity"
-                        itemtype="https://schema.org/Question">
-                        <h3 class="font-semibold mb-2 text-lg" itemprop="name">Which Bangladesh universities are
-                            supported by this calculator?</h3>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p class="text-gray-700 dark:text-gray-300" itemprop="text">All major Bangladesh
-                                universities are supported including: <strong>Public Universities</strong> - University
-                                of Dhaka (DU), BUET, Jahangirnagar University, University of Chittagong, RUET, CUET;
-                                <strong>Private Universities</strong> - North South University (NSU), BRAC University,
-                                Independent University Bangladesh (IUB), American International University (AIUB), East
-                                West University, and 40+ more institutions.
-                            </p>
-                        </div>
-                    </div>
+      <div class="border-b border-gray-200 dark:border-gray-600 pb-4">
+        <h3 class="font-semibold mb-2 text-lg">Which Bangladesh universities are supported by this calculator?</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          All major Bangladesh universities are supported including: Public Universities - University of Dhaka (DU), BUET, Jahangirnagar University, University of Chittagong, RUET, CUET; Private Universities - North South University (NSU), BRAC University, Independent University Bangladesh (IUB), AIUB, East West University, and 40+ more.
+        </p>
+      </div>
 
-                    <div class="border-b border-gray-200 dark:border-gray-600 pb-4" itemscope itemprop="mainEntity"
-                        itemtype="https://schema.org/Question">
-                        <h3 class="font-semibold mb-2 text-lg" itemprop="name">Can I calculate CGPA for multiple
-                            semesters at once?</h3>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p class="text-gray-700 dark:text-gray-300" itemprop="text">Yes! This calculator offers two
-                                modes: <strong>Semester Calculator</strong> for individual semester GPA calculation, and
-                                <strong>Overall Calculator</strong> for combining multiple semester results to get your
-                                cumulative CGPA. You can import data via CSV or add semesters manually.
-                            </p>
-                        </div>
-                    </div>
+      <div class="border-b border-gray-200 dark:border-gray-600 pb-4">
+        <h3 class="font-semibold mb-2 text-lg">Can I calculate CGPA for multiple semesters at once?</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          Yes! This calculator offers two modes: Semester Calculator for individual semester GPA calculation, and Overall Calculator for combining multiple semester results to get your cumulative CGPA.
+        </p>
+      </div>
 
-                    <div class="border-b border-gray-200 dark:border-gray-600 pb-4" itemscope itemprop="mainEntity"
-                        itemtype="https://schema.org/Question">
-                        <h3 class="font-semibold mb-2 text-lg" itemprop="name">Is this CGPA calculator free and safe to
-                            use?</h3>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p class="text-gray-700 dark:text-gray-300" itemprop="text">Yes, completely free with no
-                                registration required. Your data is stored only in your browser's local storage - no
-                                server uploads, no privacy concerns. Works offline and you can export your calculations
-                                as CSV files for backup.</p>
-                        </div>
-                    </div>
+      <div class="border-b border-gray-200 dark:border-gray-600 pb-4">
+        <h3 class="font-semibold mb-2 text-lg">Is this CGPA calculator free and safe to use?</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          Yes, completely free with no registration required. Your data is stored only in your browser’s local storage - no server uploads, no privacy concerns.
+        </p>
+      </div>
 
-                    <div class="border-b border-gray-200 dark:border-gray-600 pb-4" itemscope itemprop="mainEntity"
-                        itemtype="https://schema.org/Question">
-                        <h3 class="font-semibold mb-2 text-lg" itemprop="name">Can I plan my target CGPA for future
-                            semesters?</h3>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p class="text-gray-700 dark:text-gray-300" itemprop="text">Yes! Use the Target Planner
-                                feature to calculate what grades you need in remaining courses to achieve your desired
-                                CGPA. Perfect for scholarship requirements or academic goals planning.</p>
-                        </div>
-                    </div>
+      <div class="border-b border-gray-200 dark:border-gray-600 pb-4">
+        <h3 class="font-semibold mb-2 text-lg">Can I plan my target CGPA for future semesters?</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          Yes! Use the Target Planner feature to calculate what grades you need in remaining courses to achieve your desired CGPA.
+        </p>
+      </div>
 
-                    <div class="border-b border-gray-200 dark:border-gray-600 pb-4" itemscope itemprop="mainEntity"
-                        itemtype="https://schema.org/Question">
-                        <h3 class="font-semibold mb-2 text-lg" itemprop="name">How accurate is this calculator compared
-                            to university systems?</h3>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                            <p class="text-gray-700 dark:text-gray-300" itemprop="text">Highly accurate - uses official
-                                UGC grading scales and university-specific calculations. Trusted by 10,000+ students
-                                across Bangladesh. However, always verify final calculations with your university's
-                                academic office for official transcripts.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+      <div class="border-b border-gray-200 dark:border-gray-600 pb-4">
+        <h3 class="font-semibold mb-2 text-lg">How accurate is this calculator compared to university systems?</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          Highly accurate - uses official UGC grading scales and university-specific calculations. Trusted by 10,000+ students across Bangladesh.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-8 transition-colors">

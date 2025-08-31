@@ -1,7 +1,65 @@
+# Bangladesh CGPA Calculator - Robots.txt
+# Free CGPA & GPA Calculator for all Bangladesh universities
+# Website: https://bdcgpacalculator.netlify.app/
+
 User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /assets/
+Allow: /js/script.js
+Allow: /manifest.json
+Allow: /humans.txt
+Allow: /feed.json
+Allow: /rss.xml
+
+# Block unnecessary files and folders
 Disallow: /node_modules/
 Disallow: /.git/
 Disallow: /.vscode/
+Disallow: /.well-known/
 Disallow: /README.md
+Disallow: /netlify.toml
+Disallow: /_headers
+Disallow: /_redirects
+Disallow: /js/sw.js
 
+# Allow important crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Sitemaps
 Sitemap: https://bdcgpacalculator.netlify.app/sitemap.xml
+Sitemap: https://bdcgpacalculator.netlify.app/feed.json
+
+# Host directive
+Host: https://bdcgpacalculator.netlify.app

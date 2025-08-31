@@ -266,14 +266,14 @@ function renderSubjectsList() {
     const creditEl = row.querySelector(".subject-credit");
     const gradeEl = row.querySelector(".subject-grade");
     const gpaEl = row.querySelector(".subject-gpa");
-    
+
     // Mobile layout elements
     const nameElMobile = row.querySelector(".subject-name-mobile");
     const modeElMobile = row.querySelector(".subject-mode-mobile");
     const creditElMobile = row.querySelector(".subject-credit-mobile");
     const gradeElMobile = row.querySelector(".subject-grade-mobile");
     const gpaElMobile = row.querySelector(".subject-gpa-mobile");
-    
+
     const removeBtn = row.querySelector(".remove-btn");
     const removeBtnDesktop = row.querySelector(".remove-btn-desktop");
     const rowElement = row.querySelector(".subject-row");
@@ -285,7 +285,7 @@ function renderSubjectsList() {
     if (creditEl) creditEl.textContent = subject.credit.toFixed(1);
     if (gradeEl) gradeEl.textContent = subject.displayGrade;
     if (gpaEl) gpaEl.textContent = formatGPA(subject.gpa);
-    
+
     // Mobile layout
     if (nameElMobile) nameElMobile.textContent = subject.name;
     if (modeElMobile) modeElMobile.textContent = `(${subject.mode})`;
@@ -299,7 +299,9 @@ function renderSubjectsList() {
       removeBtn.addEventListener("click", removeHandler, { once: false });
     }
     if (removeBtnDesktop) {
-      removeBtnDesktop.addEventListener("click", removeHandler, { once: false });
+      removeBtnDesktop.addEventListener("click", removeHandler, {
+        once: false,
+      });
     }
 
     rowElement.dataset.id = subject.id;
@@ -1073,23 +1075,42 @@ function initializeAdvancedFeatures() {
 // ==============================================
 
 let semesters = [];
+let currentInputMode = "cgpa"; // 'grade' or 'cgpa'
 
-function addSemester(name, grade) {
+function addSemester(name, gradeOrCgpa, mode = "grade") {
   try {
     if (!name.trim()) {
       throw new Error("Semester name is required");
     }
 
-    const gradeMapping = UNIVERSITY_PRESETS[currentUniversity].mapping[grade];
-    if (!gradeMapping) {
-      throw new Error("Invalid grade selected");
+    let gpa;
+    let displayGrade;
+
+    if (mode === "cgpa") {
+      // Custom CGPA mode
+      gpa = parseFloat(gradeOrCgpa);
+      if (isNaN(gpa) || gpa < 0 || gpa > 4) {
+        throw new Error("CGPA must be between 0.00 and 4.00");
+      }
+      displayGrade = gpa.toFixed(2);
+    } else {
+      // Grade mode
+      const gradeMapping =
+        UNIVERSITY_PRESETS[currentUniversity].mapping[gradeOrCgpa];
+      if (!gradeMapping) {
+        throw new Error("Invalid grade selected");
+      }
+      gpa = gradeMapping.gpa;
+      displayGrade = gradeOrCgpa;
     }
 
     const semester = {
       id: Date.now(),
       name: name.trim(),
-      grade: grade,
-      gpa: gradeMapping.gpa,
+      grade: gradeOrCgpa,
+      gpa: gpa,
+      displayGrade: displayGrade,
+      mode: mode,
     };
 
     semesters.push(semester);
@@ -1116,35 +1137,51 @@ function removeSemester(id) {
 
 function renderSemestersList() {
   const container = document.getElementById("semester-list");
+  const semesterCountEl = document.getElementById("semester-count");
 
   if (!container) return;
 
   container.innerHTML = "";
 
+  // Update semester count
+  if (semesterCountEl) {
+    const count = semesters.length;
+    semesterCountEl.textContent =
+      count === 0
+        ? "0 semesters added"
+        : count === 1
+        ? "1 semester added"
+        : `${count} semesters added`;
+  }
+
   if (semesters.length === 0) {
-    container.innerHTML =
-      '<div class="text-gray-500 dark:text-gray-400 text-center py-4">No semesters added yet</div>';
+    container.innerHTML = `
+      <div class="text-center py-6 text-gray-500 dark:text-gray-400">
+        <div class="text-4xl mb-2">📚</div>
+        <p class="text-sm">No semesters added yet</p>
+        <p class="text-xs mt-1">Add your first semester above to get started</p>
+      </div>`;
     return;
   }
 
-  semesters.forEach((semester) => {
+  semesters.forEach((semester, index) => {
     const semesterElement = document.createElement("div");
     semesterElement.className =
-      "flex justify-between items-center bg-gray-50 dark:bg-gray-700 rounded-lg p-3";
+      "flex justify-between items-center bg-gray-50 dark:bg-gray-700 rounded-lg p-3 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors";
 
     semesterElement.innerHTML = `
       <div class="flex-1">
-        <div class="font-medium text-gray-900 dark:text-white">${
-          semester.name
-        }</div>
-        <div class="text-sm text-gray-600 dark:text-gray-400">${
-          semester.grade
-        } (${semester.gpa.toFixed(2)})</div>
+        <div class="font-medium text-gray-900 dark:text-white">
+          ${semester.name}
+        </div>
+        <div class="text-sm text-gray-600 dark:text-gray-400">
+          CGPA: ${semester.gpa.toFixed(2)}
+        </div>
       </div>
       <button 
         onclick="removeSemester(${semester.id})" 
-        class="text-red-600 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300 p-1"
-        title="Remove semester"
+        class="p-2 bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800 text-white rounded-lg transition-all duration-300 btn-animate shadow-md hover:shadow-lg hover:shadow-red-500/25 transform hover:scale-105"
+        title="Remove ${semester.name}"
       >
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -1178,17 +1215,104 @@ function updateOverallResults() {
 
 function initializeSemesterForm() {
   const form = document.getElementById("semester-form");
+  const gradeModeBtn = document.getElementById("grade-mode-btn");
+  const cgpaModeBtn = document.getElementById("cgpa-mode-btn");
+  const gradeModeForm = document.getElementById("grade-mode-form");
+  const cgpaModeForm = document.getElementById("cgpa-mode-form");
 
   if (!form) return;
+
+  // Initialize mode toggle buttons
+  if (gradeModeBtn && cgpaModeBtn && gradeModeForm && cgpaModeForm) {
+    gradeModeBtn.addEventListener("click", () => {
+      currentInputMode = "grade";
+      gradeModeBtn.className =
+        "flex-1 px-3 py-2 text-sm font-medium rounded-md transition-colors bg-blue-600 text-white";
+      cgpaModeBtn.className =
+        "flex-1 px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600";
+      gradeModeForm.style.display = "block";
+      cgpaModeForm.style.display = "none";
+
+      // Reset form validation
+      const semesterGrade = document.getElementById("semester-grade");
+      const semesterCgpaCustom = document.getElementById(
+        "semester-cgpa-custom"
+      );
+      const semesterName = document.getElementById("semester-name");
+      const semesterNameCustom = document.getElementById(
+        "semester-name-custom"
+      );
+
+      if (semesterGrade) semesterGrade.required = true;
+      if (semesterCgpaCustom) semesterCgpaCustom.required = false;
+      if (semesterName) semesterName.required = true;
+      if (semesterNameCustom) semesterNameCustom.required = false;
+    });
+
+    cgpaModeBtn.addEventListener("click", () => {
+      currentInputMode = "cgpa";
+      cgpaModeBtn.className =
+        "flex-1 px-3 py-2 text-sm font-medium rounded-md transition-colors bg-blue-600 text-white";
+      gradeModeBtn.className =
+        "flex-1 px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600";
+      gradeModeForm.style.display = "none";
+      cgpaModeForm.style.display = "block";
+
+      // Reset form validation
+      const semesterGrade = document.getElementById("semester-grade");
+      const semesterCgpaCustom = document.getElementById(
+        "semester-cgpa-custom"
+      );
+      const semesterName = document.getElementById("semester-name");
+      const semesterNameCustom = document.getElementById(
+        "semester-name-custom"
+      );
+
+      if (semesterGrade) semesterGrade.required = false;
+      if (semesterCgpaCustom) semesterCgpaCustom.required = true;
+      if (semesterName) semesterName.required = false;
+      if (semesterNameCustom) semesterNameCustom.required = true;
+    });
+
+    // Initialize default mode (CGPA mode)
+    const semesterGrade = document.getElementById("semester-grade");
+    const semesterCgpaCustom = document.getElementById("semester-cgpa-custom");
+    const semesterName = document.getElementById("semester-name");
+    const semesterNameCustom = document.getElementById("semester-name-custom");
+
+    // Set initial required attributes for CGPA mode
+    if (semesterGrade) semesterGrade.required = false;
+    if (semesterCgpaCustom) semesterCgpaCustom.required = true;
+    if (semesterName) semesterName.required = false;
+    if (semesterNameCustom) semesterNameCustom.required = true;
+  }
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const name = document.getElementById("semester-name").value;
-    const grade = document.getElementById("semester-grade").value;
+    if (currentInputMode === "grade") {
+      const name = document.getElementById("semester-name").value;
+      const grade = document.getElementById("semester-grade").value;
 
-    if (addSemester(name, grade)) {
-      form.reset();
+      if (addSemester(name, grade, "grade")) {
+        // Reset only grade mode form
+        document.getElementById("semester-name").value = "";
+        document.getElementById("semester-grade").value = "";
+        showSimpleMessage(`✅ ${name} added successfully!`, "success");
+      }
+    } else {
+      const name = document.getElementById("semester-name-custom").value;
+      const cgpa = document.getElementById("semester-cgpa-custom").value;
+
+      if (addSemester(name, cgpa, "cgpa")) {
+        // Reset only CGPA mode form
+        document.getElementById("semester-name-custom").value = "";
+        document.getElementById("semester-cgpa-custom").value = "";
+        showSimpleMessage(
+          `🎯 ${name} (${cgpa} CGPA) added successfully!`,
+          "success"
+        );
+      }
     }
   });
 }

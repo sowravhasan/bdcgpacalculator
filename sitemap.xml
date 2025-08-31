@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-    xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
     <!-- Main homepage - Primary landing page -->
     <url>
@@ -14,7 +11,7 @@
         <image:image>
             <image:loc>https://bdcgpacalculator.netlify.app/assets/preview.jpg</image:loc>
             <image:title>Bangladesh CGPA Calculator - Free tool for all universities</image:title>
-            <image:caption>Free CGPA & GPA Calculator for all Bangladesh universities including DU, BUET, NSU, IUB, BRAC</image:caption>
+            <image:caption>Free CGPA and GPA Calculator for all Bangladesh universities including DU, BUET, NSU, IUB, BRAC</image:caption>
         </image:image>
     </url>
 
@@ -37,22 +34,6 @@
     <!-- University Selector Section -->
     <url>
         <loc>https://bdcgpacalculator.netlify.app/#university-selector</loc>
-        <lastmod>2025-08-31</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- Advanced Tools Section -->
-    <url>
-        <loc>https://bdcgpacalculator.netlify.app/#advanced-tools</loc>
-        <lastmod>2025-08-31</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- FAQ Section -->
-    <url>
-        <loc>https://bdcgpacalculator.netlify.app/#faq</loc>
         <lastmod>2025-08-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

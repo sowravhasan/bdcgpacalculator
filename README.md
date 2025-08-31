@@ -172,30 +172,6 @@ Track your cumulative performance across multiple semesters:
 
 ---
 
-## 📥 **Installation & Development**
-
-### **🔧 Local Development**
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/bd-cgpa-calculator.git
-cd bd-cgpa-calculator
-
-# No build process needed - open index.html directly
-# Or serve locally for development
-python -m http.server 8000
-# or
-npx serve .
-```
-
-### **📦 Deployment**
-The calculator is a static web application that can be deployed anywhere:
-- **Netlify** (current hosting) - Automatic deployments
-- **Vercel** - Zero-config deployments
-- **GitHub Pages** - Free hosting for open source
-- **Any Static Host** - Upload files directly
-
----
-
 ## 🤝 **Contributing**
 
 We welcome contributions from the Bangladesh student community!
@@ -223,40 +199,11 @@ Found an issue? Please create a detailed bug report:
 
 ---
 
-## 📄 **License & Usage**
-
-### **📜 Open Source License**
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-### **🔓 Free Usage Rights**
-- ✅ **Personal Use**: Free for all students
-- ✅ **Educational Use**: Use in classrooms and workshops
-- ✅ **Commercial Use**: Integrate into educational platforms
-- ✅ **Modification**: Customize for your institution
-- ✅ **Distribution**: Share and redistribute freely
-
----
-
-## 🌟 **Support & Community**
-
-### **💬 Get Help**
-- **GitHub Issues**: [Report bugs or request features](https://github.com/yourusername/bd-cgpa-calculator/issues)
-- **Discussions**: [Join community discussions](https://github.com/yourusername/bd-cgpa-calculator/discussions)
-- **Email Support**: [Contact developer](mailto:your.email@example.com)
-
 ### **🚀 Stay Updated**
 - ⭐ **Star this repository** to show support
 - 📢 **Share with classmates** and study groups
 - 🔔 **Watch releases** for new features
 - 📱 **Follow on social media** for updates
-
-### **🎯 Roadmap**
-- [ ] **Bengali Language Support** - Full localization
-- [ ] **Mobile App Version** - Native iOS/Android apps
-- [ ] **Grade Prediction** - AI-powered academic planning
-- [ ] **University Integration** - Direct API connections
-- [ ] **Study Groups** - Collaborative features
-- [ ] **Academic Calendar** - Semester planning tools
 
 ---
 
@@ -287,15 +234,9 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ### **🎯 Project Owner**
 **Sowrav Hasan** - Lead Developer & Designer
-- 🌐 Portfolio: [sowravhasan.dev](https://sowravhasan.dev)
-- 📧 Email: [sowrav@example.com](mailto:sowrav@example.com)
-- 💼 LinkedIn: [linkedin.com/in/sowravhasan](https://linkedin.com/in/sowravhasan)
-
-### **🙏 Special Thanks**
-- **Bangladesh University Students** - For feedback and testing
-- **Academic Advisors** - For grading system verification
-- **Open Source Community** - For tools and inspiration
-- **University Authorities** - For grading guideline access
+- 🌐 Portfolio: [sowravhasan.vercel.app](https://sowravhasan.vercel.app)
+- 📧 Email: [sowrav@example.com](mailto:sowravhasan101@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/sowravhasan](https://linkedin.com/in/sowrav-hasan)
 
 ### **📚 Resources Used**
 - **UGC Guidelines**: Official Bangladesh university grading standards
@@ -326,8 +267,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ### ⭐ **If this tool helped you, please star the repository!** ⭐
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/bd-cgpa-calculator?style=social)](https://github.com/yourusername/bd-cgpa-calculator/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/bd-cgpa-calculator?style=social)](https://github.com/yourusername/bd-cgpa-calculator/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/sowravhasan/bdcgpacalculator?style=social)](https://github.com/sowravhasan/bdcgpacalculator/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/sowravhasan/bdcgpacalculator?style=social)](https://github.com/sowravhasan/bdcgpacalculator/network/members)
 
 **Made with 💙 for the 🇧🇩 Bangladesh student community**
 

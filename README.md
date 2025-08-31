@@ -235,8 +235,8 @@ Found an issue? Please create a detailed bug report:
 ### **🎯 Project Owner**
 **Sowrav Hasan** - Lead Developer & Designer
 - 🌐 Portfolio: [sowravhasan.vercel.app](https://sowravhasan.vercel.app)
-- 📧 Email: [sowrav@example.com](mailto:sowravhasan101@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/sowravhasan](https://linkedin.com/in/sowrav-hasan)
+- 📧 Email: [sowravhasan101@gmail.com](mailto:sowravhasan101@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/sowrav-hasan](https://linkedin.com/in/sowrav-hasan)
 
 ### **📚 Resources Used**
 - **UGC Guidelines**: Official Bangladesh university grading standards

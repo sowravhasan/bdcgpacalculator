@@ -1,17 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
-    <!-- Main homepage - Primary landing page -->
-    <url>
-        <loc>https://bdcgpacalculator.netlify.app/</loc>
-        <lastmod>2025-08-31</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-        <image:image>
-            <image:loc>https://bdcgpacalculator.netlify.app/assets/preview.jpg</image:loc>
-            <image:title>Bangladesh CGPA Calculator - Free tool for all universities</image:title>
-            <image:caption>Free CGPA and GPA Calculator for all Bangladesh universities including DU, BUET, NSU, IUB, BRAC</image:caption>
-        </image:image>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://bdcgpacalculator.netlify.app/</loc>
+    <lastmod>2025-09-04T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://bdcgpacalculator.netlify.app/assets/preview.jpg</image:loc>
+      <image:title>Bangladesh CGPA Calculator</image:title>
+      <image:caption>Free CGPA calculator for Bangladesh universities including DU, BUET, NSU, IUB, BRAC</image:caption>
+    </image:image>
+  </url>
 </urlset>

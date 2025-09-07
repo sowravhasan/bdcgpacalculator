@@ -4,6 +4,12 @@
 
 User-agent: *
 Allow: /
+
+# Main sitemap - contains fragment URLs for key content sections
+Sitemap: https://bdcgpacalculator.netlify.app/sitemap.xml
+Sitemap: https://bdcgpacalculator.netlify.app/feed.json
+
+# Explicitly allow all public resources (matching sitemap.xml entries)
 Allow: /index.html
 Allow: /assets/
 Allow: /js/script.js
@@ -11,6 +17,24 @@ Allow: /manifest.json
 Allow: /humans.txt
 Allow: /feed.json
 Allow: /rss.xml
+Allow: /google6cf348dae9b116c4.html
+Allow: /Ads.txt
+
+# Explicitly allow main content sections (fragment URLs in sitemap)
+# Main CGPA Calculator
+Allow: /#calculator
+# FAQ Section  
+Allow: /#frequently-asked-questions
+# Overall CGPA Calculator
+Allow: /#overall-calculator
+# Advanced Tools Section
+Allow: /#advanced-tools
+# University Selector
+Allow: /#university-selector
+# UGC Grading Scale Reference
+Allow: /#ugc-grading-scale
+# CGPA Calculation Guide
+Allow: /#how-cgpa-calculated
 
 # Block unnecessary files and folders
 Disallow: /node_modules/
@@ -23,43 +47,6 @@ Disallow: /_headers
 Disallow: /_redirects
 Disallow: /js/sw.js
 
-# Allow important crawlers
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-User-agent: WhatsApp
-Allow: /
-
-# Crawl-delay for polite crawling
+# Performance optimization - crawl delay for heavy bots
+User-agent: *
 Crawl-delay: 1
-
-# Sitemaps
-Sitemap: https://bdcgpacalculator.netlify.app/sitemap.xml
-Sitemap: https://bdcgpacalculator.netlify.app/feed.json
-
-# Host directive
-Host: https://bdcgpacalculator.netlify.app

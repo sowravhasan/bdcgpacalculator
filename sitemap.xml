@@ -1,4 +1,9 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <!-- Main Bangladesh CGPA Calculator Application Page -->
   <url>
@@ -21,7 +26,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- FAQ Section - Rich Content for Search -->
+  <!-- FAQ Section -->
   <url>
     <loc>https://bdcgpacalculator.netlify.app/#frequently-asked-questions</loc>
     <lastmod>2025-09-07</lastmod>
@@ -29,7 +34,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Overall CGPA Calculator (Multi-Semester) -->
+  <!-- Overall CGPA Calculator -->
   <url>
     <loc>https://bdcgpacalculator.netlify.app/#overall-calculator</loc>
     <lastmod>2025-09-07</lastmod>
@@ -37,7 +42,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Advanced Tools Section -->
+  <!-- Advanced Tools -->
   <url>
     <loc>https://bdcgpacalculator.netlify.app/#advanced-tools</loc>
     <lastmod>2025-09-07</lastmod>
@@ -45,7 +50,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- University Selector Section -->
+  <!-- University Selector -->
   <url>
     <loc>https://bdcgpacalculator.netlify.app/#university-selector</loc>
     <lastmod>2025-09-07</lastmod>
@@ -53,7 +58,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- UGC Grading Scale Reference -->
+  <!-- UGC Grading Scale -->
   <url>
     <loc>https://bdcgpacalculator.netlify.app/#ugc-grading-scale</loc>
     <lastmod>2025-09-07</lastmod>
@@ -61,7 +66,7 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- How CGPA is Calculated Guide -->
+  <!-- How CGPA is Calculated -->
   <url>
     <loc>https://bdcgpacalculator.netlify.app/#how-cgpa-calculated</loc>
     <lastmod>2025-09-07</lastmod>
@@ -69,7 +74,7 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- RSS Feed for Content Updates -->
+  <!-- RSS Feed -->
   <url>
     <loc>https://bdcgpacalculator.netlify.app/rss.xml</loc>
     <lastmod>2025-09-07</lastmod>
@@ -85,7 +90,7 @@
     <priority>0.4</priority>
   </url>
 
-  <!-- Progressive Web App Manifest -->
+  <!-- Web App Manifest -->
   <url>
     <loc>https://bdcgpacalculator.netlify.app/manifest.json</loc>
     <lastmod>2025-09-07</lastmod>
@@ -93,7 +98,7 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- Human-readable Information -->
+  <!-- Humans.txt -->
   <url>
     <loc>https://bdcgpacalculator.netlify.app/humans.txt</loc>
     <lastmod>2025-09-07</lastmod>
@@ -101,7 +106,7 @@
     <priority>0.2</priority>
   </url>
 
-  <!-- Google Site Verification File -->
+  <!-- Google Verification -->
   <url>
     <loc>https://bdcgpacalculator.netlify.app/google6cf348dae9b116c4.html</loc>
     <lastmod>2025-09-07</lastmod>
@@ -109,7 +114,7 @@
     <priority>0.1</priority>
   </url>
 
-  <!-- Ads Configuration -->
+  <!-- Ads.txt -->
   <url>
     <loc>https://bdcgpacalculator.netlify.app/Ads.txt</loc>
     <lastmod>2025-09-07</lastmod>
